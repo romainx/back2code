@@ -1,6 +1,7 @@
 ---
 title: Feather
 date: '2016-11-11'
+tags: [data]
 ---
 
 We often read articles on the topic **Python vs. R, which language should I pick?** My opinion is that each language, and its corresponding ecosystem, has its pros and cons and can be used efficiently to solve different problems.
