@@ -32,7 +32,7 @@ spark = SparkSession.builder.master('local').appName('spark-local').getOrCreate(
 
 f'Using Spark {spark.version} from {findspark.find()}'
 
-# 'Using Spark 2.3.1 from /Users/to145733/spark/spark-2.3.1-bin-hadoop2.7'
+# 'Using Spark 2.3.1 from /Users/xxxx/spark/spark-2.3.1-bin-hadoop2.7'
 ```
 
 [LK-1]: https://github.com/minrk/findspark
