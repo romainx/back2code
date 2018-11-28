@@ -4,7 +4,7 @@ date: '2018-11-28'
 tags: [data]
 ---
 
-**[Find Spark][LK-1]** is an handy tool to use each time you want **to switch between spark versions** in Jupyter Notebooks without the need to change the `SPARK_HOME` environment variable. It works by
+**[Find Spark][LK-1]** is an handy tool to use each time you want **to switch between spark versions** in Jupyter Notebooks without the need to change the `SPARK_HOME` environment variable. It works by:
 
 > adding `pyspark` to `sys.path` at runtime.
 
