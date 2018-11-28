@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Back 2 Code"
 theme = "ghostwriter"
-googleAnalytics = ""
+googleAnalytics = "UA-127828717-1"
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 

@@ -111,6 +111,7 @@ Once done you can stop the Spark context.
 
 # References
 
+
 * [Home page of Sparklyr](https://spark.rstudio.com/)
 * [Master URL Scheme](https://spark.apache.org/docs/latest/submitting-applications.html#master-urls)
 * [Question on SO](https://stackoverflow.com/questions/39798798/connect-sparklyr-to-remote-spark-connection)
