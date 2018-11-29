@@ -12,6 +12,8 @@ The topics that occupies me right now are:
 * [Site Reliability Engineering](https://landing.google.com/sre/interview/ben-treynor.html) (SRE). I will try to write some articles on this field of **operations**.
 * [Chaos Engineering](https://principlesofchaos.org/). I’ve created a list of books [here](https://www.goodreads.com/list/show/122960.Chaos_Engineering).
 * Also learning Go ([Golang](https://golang.org/)), but just for fun.
+* [Spark](http://spark.apache.org/) and [Kubernetes](https://kubernetes.io/).
+
 I must be nostalgic since I love old languages and systems, and all these old stories of pioneers--I have a great list of books on that topic.
 
 I'm also a big fan of plain text and the various editors dedicated to this simple but fundamental purpose. Obviously I love **Markdown**, I use it as much as I can, but unfortunately it is not--still--supported by Outlook.
