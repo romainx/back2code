@@ -4,10 +4,10 @@ date: '2018-11-29'
 tags: [data]
 ---
 
-Spark comes with an history server, it provides a great UI with many information regarding Spark jobs execution (event timeline, detail of stages, etc.).
+Spark comes with a **history server**, it provides a great UI with many information regarding Spark jobs execution (event timeline, detail of stages, etc.).
 Details can be found in the [Spark monitoring page][spark-monit].
 
-I've modified the [gettyimages/docker-spark](https://github.com/gettyimages/docker-spark) to be able to run it with the `docker-compose up`command.
+I've modified the [docker-spark](https://github.com/romainx/docker-spark) to be able to run it with the `docker-compose up`command.
 
 With this implementation, its UI will be running at `http://${YOUR_DOCKER_HOST}:18080`.
 
