@@ -92,5 +92,5 @@ df = DataFrame(enc.fit_transform(df).toarray())
 
 *Note: This post is an augmented version of my Stack Overflow answer[^2]*
 
-[^1]: Alice Zheng, [Mastering Feature Engineering](https://www.goodreads.com/book/show/31393737-mastering-feature-engineering) (O'Reilly, 2016)
+[^1]: Alice Zheng, *[Mastering Feature Engineering](https://www.goodreads.com/book/show/31393737-mastering-feature-engineering)*, (O'Reilly, 2016)
 [^2]: [Want to know the diff among pd.factorize, pd.get_dummies, sklearn.preprocessing.LableEncoder and OneHotEncoder](https://stackoverflow.com/questions/40336502/want-to-know-the-diff-among-pd-factorize-pd-get-dummies-sklearn-preprocessing)

@@ -19,4 +19,4 @@ The most problematic point is the structure of the book that is really unclear a
 
 Or the **5 golden signals** if we add to that the measure of **availability** -- I wrote an [article](https://back2code.svbtle.com/the-4-golden-signals-1) about it. Despite these reservations, it is still useful to have it on hand to refer to it from time to time, but it is not a must have -- far from it. I would rather read with interest a recent book published by the same editor: *Practical Monitoring: Effective Strategies for the Real World*. 
 
-**Slawek Ligus**, [Effective Monitoring and Alerting](https://www.goodreads.com/book/show/17084113-effective-monitoring-and-alerting) (O'Reilly, 2012)
+**Slawek Ligus**, *[Effective Monitoring and Alerting](https://www.goodreads.com/book/show/17084113-effective-monitoring-and-alerting)* (O'Reilly, 2012)
