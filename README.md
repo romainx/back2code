@@ -19,3 +19,9 @@ blogdown::install_hugo()
 # Run preview
 blogdown::serve_site()
 ```
+
+## Misc
+
+List drafts
+
+`$ hugo list drafts`

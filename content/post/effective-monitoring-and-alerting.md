@@ -17,6 +17,8 @@ The most problematic point is the structure of the book that is really unclear a
 > - **Errors**: The rate of requests that fail. The failures can be explicit (e.g., HTTP 500 errors) or implicit (e.g., an HTTP 200 OK response with a response body having too few items).
 > - **Saturation**: How “full” is the service. This is a measure of the system utilization, emphasizing the resources that are most constrained (e.g., memory, I/O or CPU). Services degrade in performance as they approach high saturation.
 
-Or the **5 golden signals** if we add to that the measure of **availability** -- I wrote an [article](https://back2code.svbtle.com/the-4-golden-signals-1) about it. Despite these reservations, it is still useful to have it on hand to refer to it from time to time, but it is not a must have -- far from it. I would rather read with interest a recent book published by the same editor: *Practical Monitoring: Effective Strategies for the Real World*. 
+Or the **5 golden signals** if we add to that the measure of **availability** -- I wrote an [article][LK-1] about it. Despite these reservations, it is still useful to have it on hand to refer to it from time to time, but it is not a must have -- far from it. I would rather read with interest a recent book published by the same editor: *Practical Monitoring: Effective Strategies for the Real World*. 
 
 **Slawek Ligus**, *[Effective Monitoring and Alerting](https://www.goodreads.com/book/show/17084113-effective-monitoring-and-alerting)* (O'Reilly, 2012)
+
+[LK-1]: {{< ref "post/the-4-golden-signals-1.md" >}}
