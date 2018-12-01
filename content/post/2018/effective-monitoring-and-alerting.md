@@ -21,4 +21,4 @@ Or the **5 golden signals** if we add to that the measure of **availability** --
 
 **Slawek Ligus**, *[Effective Monitoring and Alerting](https://www.goodreads.com/book/show/17084113-effective-monitoring-and-alerting)* (O'Reilly, 2012)
 
-[LK-1]: {{< ref "post/the-4-golden-signals-1.md" >}}
+[LK-1]: {{< ref "/post/2018/the-4-golden-signals-1.md" >}}
