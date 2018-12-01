@@ -1,16 +1,16 @@
 ---
-title: 'Dplyr and Sparklyr usage'
+title: 'Dplyr & Sparklyr usage'
 date: '2018-12-01'
 tags: [data]
 ---
 
-In this example, I want to illustrate the possibility to perform **with the same syntax** local computing as well as **distributed computing thanks to the [Sparklyr](https://spark.rstudio.com/) package**.
+In this example, I want to show the possibility to perform **with the same syntax** local computing as well as **distributed computing thanks to the [Sparklyr](https://spark.rstudio.com/) package**.
 
 To do that I will use the [nycflights13](https://github.com/hadley/nycflights13) dataset (one of the dataset used in the Sparklyr demo) in order to check *if the number of flights by day evolves according to the period of the year (the month)*.
 
 Spoiler: It varies but not so much.
 
-# Using Tidyverse tools
+# Using tidyverse tools
 
 To perform computing on your laptop in R, the best way to go is to use the [tidyverse](https://www.tidyverse.org/) packages.
 
@@ -29,11 +29,13 @@ flights_tbl %>%
 
 ![plot](/post/2018/sparklyr-dplyr_files/sparklyr-plot.png)
 
-# Using Sparklyr
+# Using sparklyr
 
-The beauty of the Sparklyr package is that you can **reuse (almost) the same code to scale and run the computations on millions of lines** (for example for all the flights in several years) in a Spark cluster.
+The beauty of the sparklyr package is that you can **reuse (almost) the same code to scale and run the computations on millions of lines** (for example for all the flights in several years) in a Spark cluster.
 
-I'm saying *almost* since you will notice that the only difference is a call to `collect`. This call permits to retrieve the computed data in the driver (running in this case on your machine) to be able to plot it. It's not a problem even with a dataset containing millions of rows since the result will always contain only 12 rows (one for each month).
+I'm saying *almost* since you will notice that the only difference is a call to `collect`. This call permits to retrieve the computed data to the driver (running in this case on your machine) to be able to plot it. It's not a problem even with a dataset containing millions of rows since the result will always contain only 12 rows (one for each month).
+
+This is a great benefit for data scientists who do not have to learn a new language / framework. This is not the case in Python. If you use python [pandas](https://pandas.pydata.org/) on your laptop, you will have to rewrite completely your code in [PySpark](http://spark.apache.org/docs/latest/api/python/pyspark.html) to be able to benefit from distributed computing in Spark.
 
 In the first example I'm running spark locally (`master = "local"`).
 
@@ -56,7 +58,7 @@ flights_df %>%
 
 ![plot](/post/2018/sparklyr-dplyr_files/sparklyr-plot.png)
 
-# Spark Standalone Cluster
+# Spark standalone cluster
 
 Now, I'm doing the same thing in a Spark Standalone cluster to be able to see the steps that are run to perform the computation.
 I'm using here the same Standalone Spark Cluster described in my previous [article][LK-1].
@@ -76,13 +78,17 @@ conf$spark.executor.instances <- 2
 sc <- spark_connect(spark_home = spark_install_find(version=spark_v)$sparkVersionDir, 
                     master = "spark://localhost:7077",
                     config = conf)
+
 # I'm reading the dataset from a parquet file accessible in the cluster
 parquet_path <- "file:///tmp/data/flights.parquet"
+
 # This is how to write the parquet file
 # flights_df <- copy_to(sc, flights_tbl, overwrite = TRUE, "flights")
 # spark_write_parquet(flights_df, parquet_path)
+
 flights_df <- spark_read_parquet(sc, "flights", path = parquet_path)
 
+# One more time the same code
 flights_df %>%
   group_by(month) %>%
   summarise(nb_flight_day = n() / n_distinct(day)) %>%
