@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Back 2 Code"
 theme = "ghostwriter"
 googleAnalytics = "UA-127828717-1"
-disqusShortname = ""
+disqusShortname = "back2code"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [permalinks]

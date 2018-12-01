@@ -12,4 +12,5 @@ draft: true
 $ mkdir -p /tmp/data
 # Creating a symlink from the container /data to the local filesystem
 $ ln -s /Users/to145733/Git/docker-spark/data/flights.parquet /tmp/data/flights.parquet
+$ ln -s /Users/to145733/Git/docker-spark/data /tmp/data
 ```
