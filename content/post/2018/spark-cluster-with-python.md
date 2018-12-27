@@ -27,6 +27,7 @@ $ python -m ipykernel install --user --name py35 --display-name "Python 3.5"
 # You can check installed kernels if you are curious
 # jupyter kernelspec list
 ```
+
 You can now choose your "Python 3.5" Kernel to run PySpark.
 If you use another version say `3.7` for example you will see an explicit error.
 
