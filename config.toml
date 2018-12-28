@@ -16,6 +16,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [Author]
     name = "Romain"
 
+[Taxonomies]
+    tag = "tags"
+
 [params]
     intro = true
     description = "[ Code — Data Science — Ops ]"
@@ -23,7 +26,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     github = "https://github.com/romainx"
     twitter = "https://twitter.com/r0mainx"
     stackoverflow = "https://stackoverflow.com/users/4413446/romain"
-    
     opengraph = true
     shareTwitter = true
     shareFacebook = false
@@ -32,15 +34,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     dateFormat = "Mon, Jan 2, 2006"
     highlightJsUrl = "highlight.pack.js"
     highlightJsLocalUrl = "highlight.pack.js"
-  
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
     highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    #highlightjsLang = ["r", "yaml"]
-    #highlightjsTheme = "github"
-
-    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    MathJaxVersion = "2.7.5"
-
 
 

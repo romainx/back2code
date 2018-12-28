@@ -42,7 +42,7 @@ To put it another way you will only be able to run only one application
 You can change this behavior in the `conf/master/spark-defaults.conf` to
 tell the master to allocate 1 core by default.
 
-```conf
+```bash
 spark.deploy.defaultCores 1
 ```
 

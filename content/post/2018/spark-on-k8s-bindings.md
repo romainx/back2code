@@ -56,7 +56,7 @@ NAME                            READY     STATUS              RESTARTS   AGE    
 spark-pi-1545987715677-driver   1/1       Running             0          12s       spark-c4e28a2ef3d14cfda16c007383318c79   driver
 spark-pi-1545987715677-exec-1   0/1       ContainerCreating   0          1s        spark-application-1545987726694          executor
 spark-pi-1545987715677-exec-2   0/1       ContainerCreating   0          1s        spark-application-1545987726694          executor
-````
+```
 
 You can for example use the label to delete all the terminated driver pods.
 
