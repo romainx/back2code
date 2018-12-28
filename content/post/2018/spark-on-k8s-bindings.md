@@ -1,6 +1,6 @@
 ---
 title: Spark on Kubernetes Python and R bindings
-date: '2018-12-27'
+date: '2018-12-28'
 tags: [data]
 ---
 
