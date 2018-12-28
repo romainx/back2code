@@ -25,3 +25,7 @@ blogdown::serve_site()
 List drafts
 
 `$ hugo list drafts`
+
+Generate CSS
+
+`$ sass themes/ghostwriter/static/styles/style.scss themes/ghostwriter/static/dist/styles.css`
