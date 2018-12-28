@@ -31,6 +31,7 @@ The registry documentation is available [here][lk-2].
 $ docker run -d -p 5000:5000 --name registry registry:2
 # Test
 $ curl -i $MY_IP:5000
+
 HTTP/1.1 200 OK
 ```
 
@@ -45,6 +46,7 @@ $ docker image tag luksa/kubia $MY_IP:5000/kubia
 $ docker push $MY_IP:5000/kubia
 # List the content
 $ curl -X GET http://$MY_IP:5000/v2/_catalog
+
 {"repositories":["kubia"]}
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: Spark on Kubernetes first run
+title: Spark on Kubernetes First Run
 date: '2018-12-27'
 tags: [data]
 ---

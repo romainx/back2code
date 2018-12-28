@@ -15,13 +15,13 @@ It's exactly the same principle as already explained in my [previous article][lk
 
 - A different image: `$MY_IP:5000/spark-py`
 - Another example: `local:///opt/spark/examples/src/main/python/pi.py`, once again a Pi computation :-|
-- A dedicated Spark **namespace**: `spark.kubernetes.namespace=spark-namespace`
+- A dedicated Spark **namespace**: `spark.kubernetes.namespace=spark`
 
 The namespace must be created first:
 
 ```bash
-$ k create namespace spark-namespace
-namespace "spark-namespace" created
+$ k create namespace spark
+namespace "spark" created
 ```
 
 It permits to isolate the Spark pods from the rest of the cluster and could be used later to **cap available resources**.
@@ -37,7 +37,7 @@ $ ./bin/spark-submit \
     --conf spark.executor.memory=512m \
     --conf spark.kubernetes.container.image=$MY_IP:5000/spark-py \
     --conf spark.kubernetes.pyspark.pythonVersion=3 \
-    --conf spark.kubernetes.namespace=spark-namespace \
+    --conf spark.kubernetes.namespace=spark \
     local:///opt/spark/examples/src/main/python/pi.py
 ```
 
@@ -50,7 +50,7 @@ $ ./bin/spark-submit \
 An interesting that has nothing to do with Python is that Spark defines **labels** that are applied on pods. They permit to easily identify the role of each pod.
 
 ```bash
-$ k get po -L spark-app-selector,spark-role -n spark-namespace
+$ k get po -L spark-app-selector,spark-role -n spark
 
 NAME                            READY     STATUS              RESTARTS   AGE       SPARK-APP-SELECTOR                       SPARK-ROLE
 spark-pi-1545987715677-driver   1/1       Running             0          12s       spark-c4e28a2ef3d14cfda16c007383318c79   driver
@@ -62,10 +62,10 @@ You can for example use the label to delete all the terminated driver pods.
 
 ```bash
 #  Can also decide to switch from the default to the spark namespace
-#$ k config set-context $(kubectl config current- context) --namespace spark-namespace
-$ k delete po -l spark-role=driver -n spark-namespace
+# $ k config set-context $(kubectl config current- context) --namespace spark
+$ k delete po -l spark-role=driver -n spark
 # Or you can delete the whole namespace
-$ k delete ns spark-namespace
+$ k delete ns spark
 ```
 
 [lk-1]: https://databricks.com/blog/2018/09/26/whats-new-for-apache-spark-on-kubernetes-in-the-upcoming-apache-spark-2-4-release.html
