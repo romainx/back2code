@@ -1,6 +1,6 @@
 ---
 title: Spark on Kubernetes Client Mode
-date: '2018-12-29'
+date: '2018-12-28'
 tags: [data]
 ---
 
