@@ -34,5 +34,15 @@ $ ./bin/spark-submit \
 
 > This sets the major Python version of the docker image used to run the driver and executor containers. Can either be 2 or 3.
 
+An interesting that has nothing to do with Python is that Spark defines **labels** that are applied on pods. They permit to easily identify the role of each pod.
+
+```bash
+k get po -L spark-app-selector,spark-role
+
+NAME                            READY     STATUS              RESTARTS   AGE       SPARK-APP-SELECTOR                       SPARK-ROLE
+spark-pi-1545985444398-driver   1/1       Running             0          11s       spark-344f13ea0f904c27a3cb510d5590ba80   driver
+spark-pi-1545985444398-exec-1   0/1       ContainerCreating   0          0s        spark-application-1545985455669          executor
+spark-pi-1545985444398-exec-2   0/1       ContainerCreating   0          0s        spark-application-1545985455669          executor
+```
 [lk-1]: https://databricks.com/blog/2018/09/26/whats-new-for-apache-spark-on-kubernetes-in-the-upcoming-apache-spark-2-4-release.html
 [lk-2]: {{< ref "/post/2018/spark-on-k8s-first-run.md" >}}

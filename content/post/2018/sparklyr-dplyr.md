@@ -63,7 +63,7 @@ flights_df %>%
 Now, I'm doing the same thing in a Spark Standalone cluster to be able to see the steps that are run to perform the computation.
 I'm using here the same Standalone Spark Cluster described in my previous [article][LK-1].
 
-```{r message=FALSE, warning=FALSE}
+```r
 spark_v <- "2.3.1"
 conf <- spark_config()
 
