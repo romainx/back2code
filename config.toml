@@ -1,10 +1,13 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Back 2 Code"
-theme = "ghostwriter"
+theme = "hermit"
 googleAnalytics = "UA-127828717-1"
 disqusShortname = "back2code"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+enableEmoji = true
 
 [permalinks]
     post = "/:year/:month/:slug/"
@@ -12,17 +15,24 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "About"
     url = "/about/"
+    
+[[menu.main]]
+    name = "Posts"
+    url = "/post/"
+    weight = 10
 
 [Author]
     name = "Romain"
 
-[Taxonomies]
-    tag = "tags"
+[taxonomies]
+  tag = "tags"
+  category = ""  # Categories are disabled by default.
 
 [params]
     intro = true
     description = "[ Code — Data Science — Ops ]"
     headline = "Back 2 Code"
+    homeSubtitle = "[ Code — Data Science — Ops ]"
     github = "https://github.com/romainx"
     twitter = "https://twitter.com/r0mainx"
     stackoverflow = "https://stackoverflow.com/users/4413446/romain"
@@ -31,11 +41,27 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     shareFacebook = false
     shareGooglePlus = false
     shareLinkedIn = false
-    dateFormat = "Mon, Jan 2, 2006"
+    # Date
+    dateFormat = "Jan 2, 2006"
+    dateformShort   = "Jan 2"
+    dateform        = "Jan 2, 2006"
+    dateformNum     = "2006-01-02"
+    dateformNumTime = "2006-01-02 15:04 -0700"
+    
     highlightJsUrl = "highlight.pack.js"
     highlightJsLocalUrl = "highlight.pack.js"
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
     highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
 
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/r0mainx"
 
+  [[params.social]]
+    name = "stackoverflow"
+    url = "https://stackoverflow.com/users/4413446/romain"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/romainx"
