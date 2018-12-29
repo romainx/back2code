@@ -22,7 +22,7 @@ We talk about awareness of network topology and distance between nodes, but **ho
 |   |-- Node 2
 |-- Rack 2
 |   |-- Node 3
-````
+```
 
 * Same node: `distance = 0`
 * Same rack (node 1 & 2): `distance = 2`
