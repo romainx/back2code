@@ -2,6 +2,7 @@
 title: Setup a local registry for Kubernetes
 date: '2018-12-26'
 tags: [ops]
+draft: true
 ---
 
 For **testing purpose**  I'm using the Kubernetes cluster shipped with the Docker Desktop client (`docker-for-desktop`).

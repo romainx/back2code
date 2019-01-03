@@ -13,7 +13,7 @@ Databricks has published an [article][lk-1] dedicated to the Spark `2.4` feature
 
 It's exactly the same principle as already explained in my [previous article][lk-2]. But this time we are using:
 
-- A different image: `$MY_IP:5000/spark-py`
+- A different image: `spark-py`
 - Another example: `local:///opt/spark/examples/src/main/python/pi.py`, once again a Pi computation :-|
 - A dedicated Spark **namespace**: `spark.kubernetes.namespace=spark`
 
@@ -35,7 +35,7 @@ $ ./bin/spark-submit \
     --conf spark.executor.instances=2 \
     --conf spark.driver.memory=512m \
     --conf spark.executor.memory=512m \
-    --conf spark.kubernetes.container.image=$MY_IP:5000/spark-py \
+    --conf spark.kubernetes.container.image=spark-py:v2.4.0 \
     --conf spark.kubernetes.pyspark.pythonVersion=3 \
     --conf spark.kubernetes.namespace=spark \
     local:///opt/spark/examples/src/main/python/pi.py

@@ -8,15 +8,12 @@ Since the version `2.3`, Spark can run on a Kubernetes cluster. Let's see how to
 In this example I will use the version `2.4`. Prerequisites are:
 
 - [Download][lk-1] an install (unzip) the corresponding Spark distribution,
-- Setup a local Kubernetes registry as explained in [my previous article][lk-2].
 
 For more information, there is a [section][lk-3] on the Spark site dedicated to this use case.
 
 # Spark images
 
 I will build and push Spark images to make them available to the K8S cluster.
-
-## Build
 
 The Spark distribution comes with a script (`docker-image-tool.sh`) that permits to build Spark images. You might wonder why build your own image and not use an image already available on the hub? One of the main reason is to give the ability to customize it to match your Spark distribution.
 
@@ -39,24 +36,6 @@ The 3 images built
 - `spark`: The standard Spark image
 - `spark-py`: The Spark image with Python bindings (including Python 2 and 3 executables)
 - `spark-r`: The Spark image with R bindings (including R executable)
-
-## Push
-
-I'm using here the same principle I've already explained in [my previous article][lk-2].
-
-```bash
-$ MY_IP="$(ipconfig getifaddr en0)"
-# Run registry
-$ docker run -d -p 5000:5000 --name registry registry:2
-# Tag the image with the registry information and the latest tag
-$ docker image tag spark:v2.4.0 $MY_IP:5000/spark
-# Push
-$ docker push $MY_IP:5000/spark
-# List the content
-$ curl -X GET http://$MY_IP:5000/v2/_catalog
-
-"repositories":["spark"]}
-```
 
 # Run
 
@@ -110,12 +89,12 @@ k get node  --output=json | jq ".items[0].status.allocatable"
 For the Spark image I'm using the one that has been pushed to the repository.
 
 ```bash
---conf spark.kubernetes.container.image=$MY_IP:5000/spark
+--conf spark.kubernetes.container.image=spark:v2.4.0
 ``` 
 
 ### Executable
 
-We can see in the `Dockerfile` that the examples are available in `/opt/spark/examples`. 
+We can see in the `Dockerfile` that the examples are available in `/opt/spark/examples`.
 
 ```Dockerfile
 COPY examples /opt/spark/examples
@@ -137,7 +116,7 @@ $ ./bin/spark-submit \
     --conf spark.executor.instances=2 \
     --conf spark.driver.memory=512m \
     --conf spark.executor.memory=512m \
-    --conf spark.kubernetes.container.image=$MY_IP:5000/spark \
+    --conf spark.kubernetes.container.image=spark:v2.4.0\
     local:///opt/spark/examples/jars/spark-examples_2.11-2.4.0.jar
 ```
 
@@ -170,5 +149,4 @@ $ k port-forward spark-pi-1545849731069-driver 4040:4040
 ```
 
 [lk-1]: https://spark.apache.org/downloads.html
-[lk-2]: {{< ref "/post/2018/docker-local-registry.md" >}}
 [lk-3]: https://spark.apache.org/docs/latest/running-on-kubernetes.html

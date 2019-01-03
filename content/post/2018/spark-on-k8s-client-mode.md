@@ -6,7 +6,6 @@ tags: [data]
 
 This is the third article in the Spark on Kubernetes (K8S) series after:
 
-- *Prerequisites: [Setup a local registry for Kubernetes][lk-4]*
 - [Spark on Kubernetes First][lk-2]
 - [Spark on Kubernetes Python and R bindings][lk-3]
 
@@ -35,7 +34,7 @@ $ ./bin/spark-submit \
     --conf spark.executor.instances=2 \
     --conf spark.driver.memory=512m \
     --conf spark.executor.memory=512m \
-    --conf spark.kubernetes.container.image=$MY_IP:5000/spark \
+    --conf spark.kubernetes.container.image=spark:v2.4.0 \
     --conf spark.kubernetes.namespace=spark \
     file://$SPARK_HOME/examples/jars/spark-examples_2.11-2.4.0.jar
 ```
@@ -70,7 +69,7 @@ $ ./bin/spark-shell \
     --driver-memory 512M \
     --executor-memory 512M \
     --conf spark.executor.instances=2 \
-    --conf spark.kubernetes.container.image=$MY_IP:5000/spark \
+    --conf spark.kubernetes.container.image=spark:v2.4.0 \
     --conf spark.kubernetes.namespace=spark
 ```
 
@@ -129,4 +128,3 @@ At the end of the shell, the executors are terminated. Cool!
 [lk-1]: http://spark.apache.org/docs/latest/submitting-applications.html#launching-applications-with-spark-submit
 [lk-2]: {{< ref "/post/2018/spark-on-k8s-first-run.md" >}}
 [lk-3]: {{< ref "/post/2018/spark-on-k8s-bindings.md" >}}
-[lk-4]: {{< ref "/post/2018/docker-local-registry.md" >}}
