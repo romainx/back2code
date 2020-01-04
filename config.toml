@@ -1,9 +1,9 @@
 baseURL = "https://www.back2code.me/"
 languageCode = "en-us"
 title = "Back 2 Code"
-theme = "er"
+theme = "err"
 googleAnalytics = "UA-127828717-1"
-paginate = 20 
+paginate = 15 
 
 [Author]
     name = "Romain"
