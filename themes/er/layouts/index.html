@@ -14,6 +14,7 @@
         {{ if isset .Params "tags" }}
         tags: [ {{ range .Params.tags }}<a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}' class="link silver">{{ . }}</a> {{ end }} ]
         {{ end }}
+        {{- if .Summary -}}<p class="note content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}<span>&mldr;</span>{{- end -}}</p>{{- end -}}
       </p>
     </li>
     {{ end }}

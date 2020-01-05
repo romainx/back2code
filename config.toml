@@ -4,6 +4,7 @@ title = "Back 2 Code"
 theme = "er"
 googleAnalytics = "UA-127828717-1"
 paginate = 15 
+summaryLength = 20
 
 [Author]
     name = "Romain"
@@ -12,10 +13,6 @@ paginate = 15
   [markup.highlight]
     codeFences = true
     guessSyntax = true
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
     noClasses = true
     style = "monokailight"
     tabWidth = 2
