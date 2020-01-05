@@ -1,7 +1,7 @@
 ---
 title: 'Molecule'
 date: '2019-08-26'
-tags: [dev]
+tags: [ops]
 ---
 
 > Molecule is designed to aid in the development and testing of Ansible roles.
