@@ -44,9 +44,9 @@ This time there is no more pod for the driver.
 ```bash
 $ k get po -n spark
 
-NAME                            READY     STATUS    RESTARTS   AGE
-spark-pi-1546030938784-exec-1   1/1       Running   0          4s
-spark-pi-1546030939189-exec-2   1/1       Running   0          4s
+# NAME                            READY     STATUS    RESTARTS   AGE
+# spark-pi-1546030938784-exec-1   1/1       Running   0          4s
+# spark-pi-1546030939189-exec-2   1/1       Running   0          4s
 ```
 
 The result can be seen directly in the console.
@@ -90,25 +90,27 @@ Type in expressions to have them evaluated.
 Type :help for more information.
 ```
 
-We can see the 2 executors running
+We can see the 2 executors running.
+
 ```bash
 $ k get po -l spark-app-selector=spark-application-1546031781274 -n spark
 
-NAME                               READY     STATUS    RESTARTS   AGE
-spark-shell-1546031781314-exec-1   1/1       Running   0          4m
-spark-shell-1546031781735-exec-2   1/1       Running   0          4m
+# NAME                               READY     STATUS    RESTARTS   AGE
+# spark-shell-1546031781314-exec-1   1/1       Running   0          4m
+# spark-shell-1546031781735-exec-2   1/1       Running   0          4m
 ```
 
 Now let's try a simple example with an RDD.
 
 ```scala
 scala> val data = 1 to 10000
-data: scala.collection.immutable.Range.Inclusive = Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, ...
+// data: scala.collection.immutable.Range.Inclusive = Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, ...
+
 scala> val distData = sc.parallelize(data)
-distData: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[0] at parallelize at <console>:26
+// distData: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[0] at parallelize at <console>:26
 
 scala> distData.filter(_ < 10).collect()
-res0: Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8, 9)
+// res0: Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8, 9)
 ```
 
 We can check in the executor logs
@@ -116,7 +118,7 @@ We can check in the executor logs
 ```bash
 $ k logs -l spark-app-selector=spark-application-1546031781274 -n spark
 
-2018-12-28 21:27:22 INFO  Executor:54 - Finished task 1.0 in stage 0.0 (TID 1). 734 bytes result sent to driver
+# 2018-12-28 21:27:22 INFO  Executor:54 - Finished task 1.0 in stage 0.0 (TID 1). 734 bytes result sent to driver
 ```
 
 And also in the Spark UI without the need to forward a port since the driver runs locally, so you can reach it at http://localhost:4040/.
