@@ -1,7 +1,7 @@
 ---
 title: Outliers
 date: '2017-08-19'
-tags: [data]
+categories: [data]
 ---
 
 # Definition

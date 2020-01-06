@@ -1,7 +1,7 @@
 ---
 title: mypy static type checking in Python
 date: '2017-11-01'
-tags: [dev]
+categories: [dev]
 ---
 
 **Static type checking** could be one of the next feature to be included **in the Python standard library**. One of the main reason is that the lack of static typing is sometimes cool — you do not want to take care of it when you write small scripts — but you would be sometimes happy when your code base is growing to ensure that everything is fine without writing a test case for each line of code. So **[mypy](http://mypy-lang.org)** is here for that.

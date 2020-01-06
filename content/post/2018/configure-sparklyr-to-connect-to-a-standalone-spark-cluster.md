@@ -1,7 +1,8 @@
 ---
 title: 'Configure Sparklyr to connect to a Standalone Spark Cluster'
 date: '2018-11-28'
-tags: [data]
+categories: [data]
+tags: ['spark','r']
 ---
 
 # Run a Standalone Spark Cluster

@@ -1,7 +1,8 @@
 ---
 title: Spark on Kubernetes First Run
 date: '2018-12-27'
-tags: [data]
+categories: [data]
+tags: ['spark', 'kubernetes']
 ---
 
 Since the version `2.3`, Spark can run on a Kubernetes cluster. Let's see how to do it.

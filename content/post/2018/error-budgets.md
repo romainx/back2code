@@ -1,7 +1,7 @@
 ---
 title: Error Budgets
 date: '2018-10-24'
-tags: [ops]
+categories: [ops]
 ---
 
 > SRE has found that roughly 70% of outages are due to changes in a live system.

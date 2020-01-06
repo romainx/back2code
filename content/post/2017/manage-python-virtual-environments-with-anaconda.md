@@ -1,7 +1,7 @@
 ---
 title: Manage Python virtual environments with Anaconda
 date: '2017-08-26'
-tags: [ops]
+categories: [ops]
 ---
 
 > A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them. It solves the “Project X depends on version 1.x but, Project Y needs 4.x” dilemma, and keeps your global site-packages directory clean and manageable.

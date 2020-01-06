@@ -1,7 +1,7 @@
 ---
 title: Using data in Spark Standalone Cluster
 date: '2018-11-29'
-tags: []
+categories: []
 draft: true
 ---
 

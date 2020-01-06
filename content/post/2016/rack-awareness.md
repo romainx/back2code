@@ -1,7 +1,7 @@
 ---
 title: Rack Awareness
 date: '2016-11-18'
-tags: [data, ops]
+categories: [data, ops]
 ---
 
 **Hadoop** is a distributed system, so its core services[^1] have to know the network topology — in short where data nodes reside in the data center — either to ensure reliability (try to write replicas of a block at different location for fault tolerance) and performance (try[^2] to read the closest blocks).

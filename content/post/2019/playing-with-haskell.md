@@ -1,7 +1,8 @@
 ---
 title: 'Playing with Haskell'
 date: '2019-07-01'
-tags: [dev]
+categories: [dev]
+tags: ['haskell']
 ---
 
 While I was reading *Seven Languages in Seven Weeks* [^RF:Tate_2010], I wanted to test **Haskell**.

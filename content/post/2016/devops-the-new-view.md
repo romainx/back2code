@@ -1,7 +1,7 @@
 ---
 title: DevOps the new view
 date: '2016-11-26'
-tags: [ops]
+categories: [ops]
 ---
 
 While reading *Effective DevOps*[^1] I found a very interesting point.

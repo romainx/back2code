@@ -1,7 +1,8 @@
 ---
 title: 'Functional Programming in Python'
 date: '2019-12-27'
-tags: [dev]
+categories: [dev]
+tags: ['python']
 ---
 
 Functional programming can also be interesting in **Python**. Here are some useful snippets.

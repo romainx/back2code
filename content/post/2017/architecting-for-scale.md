@@ -1,7 +1,7 @@
 ---
 title: Architecting for Scale
 date: '2017-12-26'
-tags: [ops, book]
+categories: [ops, book]
 ---
 
 ![book cover](/post/architecting-for-scale_files/architecting.jpeg)

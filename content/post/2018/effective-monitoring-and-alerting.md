@@ -1,7 +1,8 @@
 ---
 title: Effective Monitoring and Alerting
 date: '2018-11-12'
-tags: [ops, book]
+categories: [ops, book]
+tags: ['monitoring']
 ---
 
 ![Book cover](/post/effective-monitoring-and-alerting_files/effective-monit.jpg)

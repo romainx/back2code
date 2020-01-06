@@ -1,7 +1,8 @@
 ---
 title: AWS CLI Setup
 date: '2018-05-13'
-tags: [ops]
+categories: [ops]
+tags: ['aws']
 ---
 
 I explain here how to interact with AWS either with the **CLI** (Command Line Interface) and with an IT automation tool: **Ansible**. Ansible is not the first tool that comes in mind for AWS (Serverless, Terraform or the built-in CloudFormation make more sense) however Ansible could be useful if you just want to configure some EC2 and specially if you have already an Ansible script somewhere around.
@@ -13,7 +14,7 @@ You will also need AWS **Access and Secret Key pair**. If you do not know how to
 
 ## Conda environment
 
-Setting up a fresh conda environment with the latest python version and giving it a meaningful name `aws`.
+Setting up a fresh `conda` environment with the latest python version and giving it a meaningful name `aws`.
 
 `$ conda create -n aws python=3.6.5`
 

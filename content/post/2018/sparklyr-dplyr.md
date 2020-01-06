@@ -1,7 +1,8 @@
 ---
 title: 'Dplyr & Sparklyr usage'
 date: '2018-12-01'
-tags: [data]
+categories: [data]
+tags: ['spark']
 ---
 
 In this example, I want to show the possibility to perform **with the same syntax** local computing as well as **distributed computing thanks to the [Sparklyr](https://spark.rstudio.com/) package**.

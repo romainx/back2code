@@ -1,7 +1,8 @@
 ---
 title: 'Molecule'
 date: '2019-08-26'
-tags: [ops]
+categories: [ops]
+tags: ['ansible', 'testinfra']
 ---
 
 > Molecule is designed to aid in the development and testing of Ansible roles.

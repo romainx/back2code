@@ -1,7 +1,8 @@
 ---
 title: Configure PySpark to connect to a Standalone Spark Cluster
 date: '2018-11-29'
-tags: [data]
+categories: [data]
+tags: ['spark', 'python']
 ---
 
 In one of my [previous article][LK-1] I talked about running a Standalone Spark Cluster inside Docker containers through the usage of [docker-spark][LK-2]. I was using it with R Sparklyr framework. 

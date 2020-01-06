@@ -1,7 +1,7 @@
 ---
 title: Setup a local registry for Kubernetes
 date: '2018-12-26'
-tags: [ops]
+categories: [ops]
 draft: true
 ---
 

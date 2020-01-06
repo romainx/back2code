@@ -1,7 +1,8 @@
 ---
 title: Find Spark
 date: '2018-11-28'
-tags: [data]
+categories: [data]
+tags: ['spark', 'python']
 ---
 
 **[Find Spark][LK-1]** is an handy tool to use each time you want **to switch between spark versions** in Jupyter Notebooks without the need to change the `SPARK_HOME` environment variable. It works by:

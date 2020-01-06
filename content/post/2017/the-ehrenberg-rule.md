@@ -2,7 +2,7 @@
 title: The Ehrenberg’s rule
 date: '2017-08-21'
 categories: []
-tags: [data]
+categories: [data]
 ---
 
 While reading *Data Analysis with Open Source Tools*[^1]--one of my favorite book on this topic--, I was surprised to discover that rounding numbers to display was described by a rule bearing the name of Andrew S. C. Ehrenberg .

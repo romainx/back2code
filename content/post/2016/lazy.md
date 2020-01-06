@@ -1,7 +1,7 @@
 ---
 title: Lazy
 date: '2016-11-10'
-tags: [dev]
+categories: [dev]
 ---
 
 The laziness of engineers has always been one of the biggest driver in computer science. Here is a quote[^1] by **John Backus** the father of FORTRAN — the daddy of modern programming languages .

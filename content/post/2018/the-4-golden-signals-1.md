@@ -1,7 +1,8 @@
 ---
 title: The 4 Golden Signals + 1
 date: '2018-01-03'
-tags: [ops]
+categories: [ops]
+tags: ['monitoring']
 ---
 
 The term **4 golden signals** has been introduced by **Google SRE team** in the book *Site Reliability Engineering*[^1]. The main definitions presented below are borrowed from this book.

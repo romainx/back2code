@@ -1,7 +1,8 @@
 ---
 title: Spark on Kubernetes Client Mode
 date: '2018-12-29'
-tags: [data]
+categories: [data]
+tags: ['spark', 'kubernetes']
 ---
 
 This is the third article in the Spark on Kubernetes (K8S) series after:

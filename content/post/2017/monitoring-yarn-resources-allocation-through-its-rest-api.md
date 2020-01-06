@@ -1,7 +1,7 @@
 ---
 title: Monitoring YARN resources allocation through its REST API
 date: '2017-09-02'
-tags: [ops]
+categories: [ops]
 ---
 
 This article explains how to put in place quickly a basic monitoring of the **Hadoop YARN resource allocation system** through the ResourceManager REST API’s[^1]. The same information is also available in metrics collectors like Ambari metrics (AMS), but YARN API is really easy to use and is available everywhere — and most of the time without requiring authentication. A last word, triggers (thresholds) on these metrics make efficient source to integrate into a global monitoring and alerting system, like Nagios or Zabbix, since they are not available out of the box in the standard Ambari alerting system[^2]. Now let's go!

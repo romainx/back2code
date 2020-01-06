@@ -1,7 +1,7 @@
 ---
 title: Scaling for Humans
 date: '2017-09-16'
-tags: [data]
+categories: [data]
 ---
 
 **Erik Meijer**[^1] in one of his lecture[^2] of the Functional Program Design in Scala course uses a so terrible example that I wanted to write it down. He used it to introduce reactive programming in Scala through the use of a `Future[T]` monad. But this is not the topic I want to talk about here. I just want to highlight, by reusing his example, the concept of **scaling for humans**.

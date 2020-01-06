@@ -1,7 +1,7 @@
 ---
 title: Shared Stories in Practice
 date: '2016-12-02'
-tags: [ops]
+categories: [ops]
 ---
 
 In my [previous article](https://back2code.svbtle.com/devops-the-new-view) on **DevOps** , I talked about an important tool in the process of enabling cooperative learning: **Shared stories**. But in practice what does it means? Here is a very simple proposal that can be applied almost anywhere and that do not require any tool--except a ticketing tool.

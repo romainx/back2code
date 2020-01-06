@@ -1,7 +1,7 @@
 ---
 title: Fun but so true
 date: '2018-10-21'
-tags: [dev, ops]
+categories: [dev, ops]
 ---
 
 Some of my favourite quotes about **software engineering**.

@@ -1,7 +1,8 @@
 ---
 title: WSJF
 date: '2018-11-27'
-tags: [dev]
+categories: [dev]
+tags: ['agile']
 ---
 
 **WSJF** stands for Weighted Shortest Job First. It’s a technique used in scaled Agile framework (SAFe) to prioritise jobs—epics, features and capabilities—according to their value relative to the cost to perform it. Basically it’s **a way of ranking a list of features in order to maximise the outcome—the value produced—with a constrained capacity to produce it**. The job with the highest WSJF (value over the cost) is selected first for implementation.

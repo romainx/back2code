@@ -1,7 +1,8 @@
 ---
 title: Spark History Server available in docker-spark
 date: '2018-11-29'
-tags: [data]
+categories: [data]
+tags: ['spark']
 ---
 
 Spark comes with a **history server**, it provides a great UI with many information regarding Spark jobs execution (event timeline, detail of stages, etc.).

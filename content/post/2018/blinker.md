@@ -1,7 +1,8 @@
 ---
 title: Blinker
 date: '2018-04-27'
-tags: [dev]
+categories: [dev]
+tags: ['python']
 ---
 
 I’m using [Pelican](https://blog.getpelican.com/) for [another blog](http://www.aubonroman.com) dedicated to books--no one is perfect. For several needs--an mainly because I’m a nerd--I have developed several plugins. And I have discovered that the Pelican plugin mechanism is based on a small framework called [Blinker](https://pythonhosted.org/blinker/).

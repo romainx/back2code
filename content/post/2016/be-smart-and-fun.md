@@ -1,7 +1,7 @@
 ---
 title: Be Smart and Fun
 date: '2016-11-15'
-tags: [book]
+categories: [book]
 ---
 
 I’ve heard about a book standing on top of computer science book lists (for example in the [Essential Books of Computer Science](https://www.goodreads.com/list/show/2205) list). And what is this book about?

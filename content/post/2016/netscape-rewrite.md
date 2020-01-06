@@ -1,7 +1,7 @@
 ---
 title: "Netscape, the rewrite big mistake"
 date: "2016-11-10"
-tags: [dev]
+categories: [dev]
 ---
 
 Back in the mid-1990s **Netscape** was one of the first successful startup of the Internet era. The company had made with success it's IPO (Initial Public Offering) and trusted more dans 90% of browser usage. In 2008 the company had lost the browser war and its owner AOL has announced the end of the support of Netscape products. What happened?

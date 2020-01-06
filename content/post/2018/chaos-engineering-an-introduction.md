@@ -1,7 +1,7 @@
 ---
 title: 'Chaos Engineering: an introduction'
 date: '2018-05-01'
-tags: [ops]
+categories: [ops]
 ---
 
 ![chaos](/post/chaos-engineering-an-introduction_files/chaos.png)
