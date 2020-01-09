@@ -9,6 +9,6 @@
       {{ .Site.Params.since }} - 
     {{ end }}
     {{- $current }}
-    <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
+    <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}<a href="https://stackoverflow.com/users/4413446/romain?tab=profile">{{ .Site.Author.name | safeHTML }}</a>{{ end }}</span>
   </span>
 </footer>
