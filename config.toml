@@ -6,7 +6,10 @@ googleAnalytics = "UA-127828717-1"
 paginate = 12
 summaryLength = 20
 
-[Author]
+[params]
+    since = 2016
+
+[author]
     name = "Romain"
 
 [markup]

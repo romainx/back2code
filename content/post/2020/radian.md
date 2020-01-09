@@ -6,7 +6,6 @@ tags: ['r']
 ---
 
 I'm a big fan of console tools, and I was wondering if there was a way to **color the R console** output.
-
 I came across this tool called [Radian](https://github.com/randy3k/radian) with this attractive tagline.
 
 > A 21 century R console
@@ -20,6 +19,7 @@ I've written a short `dockerfile` with `rocker/tidyverse` as base image in order
 ```dockerfile
 FROM rocker/tidyverse:latest
 
+# -qq: No output except for errors
 RUN apt-get update -qq && apt-get -y install \
     python3-pip && \
     pip3 install radian

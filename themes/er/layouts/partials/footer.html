@@ -2,4 +2,13 @@
   <hr class="dn db-l ml0-l gray w3"><br>
   Powered by <a href="https://gohugo.io/" target="_blank" class="link gray dim">Hugo</a>, based on the <a href="https://github.com/lingxz/er" target="_blank" class="link gray dim">Er</a> theme. <br>
   {{ with .Site.Copyright }}{{ . }}{{end}}
+  <span class="copyright-year">
+    {{- $current := now.Format "2006" }}
+    &copy; 
+    {{ if ne .Site.Params.since $current -}}
+      {{ .Site.Params.since }} - 
+    {{ end }}
+    {{- $current }}
+    <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
+  </span>
 </footer>
