@@ -83,9 +83,10 @@ By defining a simple docker image for that the advantage in terms of simplicity 
 FROM registry.access.redhat.com/ubi8/ubi-init
 
 # Install httpd
-RUN dnf -y install httpd
-# Tell systemd to start httpd
-RUN systemctl enable httpd
+RUN dnf -y install httpd && \
+    dnf clean all && \
+    # Tell systemd to start httpd
+    systemctl enable httpd
 
 # Expose its default port
 EXPOSE 80
