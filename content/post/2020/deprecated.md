@@ -25,7 +25,7 @@ There is several implementations, I've chosen [Deprecated](https://github.com/ta
 # Install
 
 ```bash
-pip install deprecated
+$ pip install deprecated
 ```
 
 # Deprecate things
@@ -49,7 +49,7 @@ def new_function():
 
 # How it works
 
-It uses a Python standard library called `warnings` [^1]. 
+It uses a Python standard library called `warnings`[^1]. 
 
 > Warning messages are typically issued in situations where it is useful to alert the user of some condition in a program, where that condition (normally) doesn’t warrant raising an exception and terminating the program. For example, one might want to issue a warning when a program uses an obsolete module.
 
