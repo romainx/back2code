@@ -73,7 +73,7 @@ docker exec ubi-init systemctl status httpd
 #    Active: active (running) since Sun 2020-01-19 10:42:52 UTC; 5s ago
 ```
 
-Now the Apache start page should be displayed in your preferred web browser at (http://localhost)[http://localhost].
+Now the Apache start page should be displayed in your preferred web browser at [http://localhost](http://localhost).
 
 # From a docker image
 
