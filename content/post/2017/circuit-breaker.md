@@ -1,6 +1,7 @@
 ---
 title: Circuit Breaker
 date: '2017-11-28'
+tags: ['monitoring']
 categories: [dev, ops]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Monitoring YARN resources allocation through its REST API
 date: '2017-09-02'
-tags: ['hadoop']
+tags: ['hadoop', 'monitoring']
 categories: [ops]
 ---
 
