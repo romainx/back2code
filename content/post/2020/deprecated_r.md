@@ -5,14 +5,14 @@ categories: [dev]
 tags: ['R']
 ---
 
-After my [recent article]({{< ref "deprecated" >}}) about marking **deprecated** code in Python I had to do the same thing in **R**.
-The good thing is that it's included in the language (in The R Base Package).
+After my [recent article]({{< ref "deprecated" >}}) on marking **deprecated** code in Python, I had to do the same thing in **R**.
+It's included in the language (in The R Base Package).
 
 To deprecate an object simply make a call to the `.Deprecated()` function.
-It will produce a warning---that can be suppressed by users by calling `suppressWarnings()`.
+It will produce a **warning**---that can be suppressed by users by calling `suppressWarnings()`.
 
 It's also possible to signal that an object has been removed through a call to `.Defunct()`. 
-In this case it will produce an error, in other terms the program will stop working.
+In this case it will produce an **error**, in other terms the program will stop working.
 
 ```R
 old_function <- function() {
