@@ -125,7 +125,7 @@ What is the problem?
 # Next
 
 To go further it could be interesting to have a look at [Podman](https://podman.io/).  
-[This article][LK-4] explain how and the advantages of using this setup.
+[This article][LK-4] explains how and the advantages of using this setup.
 I may give it a try in a next article...
 
 [LK-1]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/building_running_and_managing_containers/using_red_hat_universal_base_images_standard_minimal_and_runtimes
