@@ -1,6 +1,7 @@
 ---
 title: General problem-solving techniques
 date: '2017-01-14'
+tags: ['method']
 categories: [dev]
 ---
 
