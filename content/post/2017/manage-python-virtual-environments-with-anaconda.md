@@ -1,6 +1,7 @@
 ---
 title: Manage Python virtual environments with Anaconda
 date: '2017-08-26'
+tags: ['python']
 categories: [ops]
 ---
 

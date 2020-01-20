@@ -1,6 +1,7 @@
 ---
 title: Numeric and Binary Encoders in Python
 date: '2017-09-24'
+tags: ['python']
 categories: [data]
 ---
 

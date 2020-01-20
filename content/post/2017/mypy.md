@@ -1,6 +1,7 @@
 ---
 title: mypy static type checking in Python
 date: '2017-11-01'
+tags: ['python']
 categories: [dev]
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: The Ehrenberg’s rule
 date: '2017-08-21'
-categories: []
+tags: ['readability']
 categories: [data]
 ---
 
-While reading *Data Analysis with Open Source Tools*[^1]--one of my favorite book on this topic--, I was surprised to discover that rounding numbers to display was described by a rule bearing the name of Andrew S. C. Ehrenberg .
+While reading *Data Analysis with Open Source Tools*[^1]--one of my favorite book on this topic--, I was surprised to discover that rounding numbers to display was described by a rule bearing the name of Andrew S. C. Ehrenberg.
 
 > It is obviously pointless to report or quote results to more digits than is warranted. In fact, it is misleading or at the very least unhelpful, because it fails to communicate to the reader another important aspect of the result--namely its reliability! A good rule (sometimes known as Ehrenberg’s rule) is to quote all digits up to and including the *first two variable digits*.
 

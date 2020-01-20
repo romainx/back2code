@@ -1,6 +1,7 @@
 ---
 title: Scaling for Humans
 date: '2017-09-16'
+tags: ['readability']
 categories: [data]
 ---
 
