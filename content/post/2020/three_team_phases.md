@@ -17,7 +17,7 @@ In his book *Elastic Leadership* [^1], **Roy Osherove** talks about an interesti
 
 # Three styles of leadership
 
-One of the thing I found very smart in his analysis is **the adaptation of the style of leadership** according to the phase.
+One of the thing I found very smart in his analysis is **the adaptation of the style of leadership according to the phase**.
 
 - **Survival mode**: Use **command-and-control** leadership.
 
