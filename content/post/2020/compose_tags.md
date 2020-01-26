@@ -1,5 +1,5 @@
 ---
-title: 'Defining Multiple Tags in Docker Compose'
+title: 'Multiple Image Tags with Docker Compose'
 date: '2020-01-26'
 categories: ['ops']
 tags: ['docker']
@@ -7,13 +7,13 @@ tags: ['docker']
 
 Recently I answered to [a question on Stack Overflow](https://stackoverflow.com/questions/47327979/how-to-use-multiple-image-tags-with-docker-compose):
 
-> How to use multiple image tags with docker-compose
+> How to use multiple image tags with docker-compose?
 
-`extends` cannot by used anymore in Compose file format `> 3` but the [Extension fields](https://docs.docker.com/compose/compose-file/#extension-fields) capability added in the version `3.4` can replace it to achieve the same goal: **reusing a single definition to define several tags**.
+The validated answer was based on `extends`, but it cannot by used anymore in Compose file format `3.x`. As suggested by a user, the [Extension fields](https://docs.docker.com/compose/compose-file/#extension-fields) capability added in the version `3.4` of Docker Compose can replace it to achieve the same goal: **reuse a single definition to set several tags**.
 
 # Use YAML extension to define multiple tags
 
-Here is how to use YAML extensions in this case.
+Here is how to use `YAML` extensions in this case.
 
 ```YAML
 version: "3.4"
@@ -42,7 +42,7 @@ services:
     image: "ubi-httpd:${UBI_HTTPD_PATCH}"
 ```
 
-It's using an `.env` file to define environment variables.
+It uses an `.env` file to define environment variables.
 
 ```bash
 $ cat .env
@@ -65,4 +65,4 @@ $ docker images | grep ubi-httpd
 # ubi-httpd  latest  8cc412411805  3 minutes ago  268MB
 ```
 
-You can also push the images in the same way.
+Images could also be pushed in the same way.
