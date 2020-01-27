@@ -1,7 +1,7 @@
 ---
 title: 'The Three Team Phases'
 date: '2020-01-25'
-categories: [ops]
+categories: [book]
 tags: ['method']
 ---
 
