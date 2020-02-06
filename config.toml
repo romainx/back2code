@@ -19,6 +19,7 @@ summaryLength = 20
     codeFences = true
     guessSyntax = true
     noClasses = true
+    # colorful, pastie
     style = "monokailight"
     tabWidth = 2
 
