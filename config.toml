@@ -29,9 +29,14 @@ summaryLength = 20
 [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 10
+    weight = 1
     
 [[menu.main]]
     name = "Archives"
     url = "/post/"
-    weight = 20
+    weight = 2
+
+[[menu.main]]
+    name = "Docs"
+    url = "/docs/"
+    weight = 3

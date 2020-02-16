@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: "2018-11-28"
+type: "page"
 ---
 
 My first contact with code was--like for a lot of people belonging to my generation--with **BASIC** on a CRT TV screen loading files from a tape recorder. Then I learned **C** and the great magical world of Objects with **Java**. But I was a bit upset by its growing complexity and the need to write a bunch of useless code.
