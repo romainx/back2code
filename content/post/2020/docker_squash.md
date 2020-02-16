@@ -192,6 +192,10 @@ As expected the result is the same with a crafted `Dockerfile`.
 
 The idea is to use a multi-stage build to copy all the layers into a single layer. I think this is the worst thing to do however I mention it since this solution is discussed see [here](https://github.com/moby/moby/issues/34565) for example. For this reason I will not develop this solution. If you are interested in finding alternatives, see also [this question](https://stackoverflow.com/questions/55220569/alternative-to-using-squash-when-building-docker-images-on-windows-using-local) on SO.
 
+## Buildah
+
+Using the [Buildah](https://github.com/containers/buildah) tool to build images also offer a `--squash` option.
+
 # Wrap up
 
 Squashing image at the build has several benefits
