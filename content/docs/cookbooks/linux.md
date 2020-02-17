@@ -2,6 +2,7 @@
 title: 'Linux Cookbook'
 type: page
 tags: ['linux']
+draft: True
 ---
 
 # Apt
