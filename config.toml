@@ -5,7 +5,7 @@ theme = "er"
 googleAnalytics = "UA-127828717-1"
 disqusShortname = "back2code"
 paginate = 12
-summaryLength = 20
+summaryLength = 40
 
 [params]
     since = 2016
