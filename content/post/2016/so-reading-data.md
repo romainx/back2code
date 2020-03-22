@@ -1,7 +1,8 @@
 ---
 title: "Stack Overflow: reading data"
 date: "2016-11-05"
-categories: [dev]
+categories: ['dev']
+tags: ['python', 'r']
 ---
 
 One of the tedious thing in [Stack Overflow](http://stackoverflow.com/) is to **grab example data provided by users** in order to be able to use it to reproduce the case and try to solve it. Here is how to do it efficiently in **R** and **Python**, hope this will help you being the first to answer!

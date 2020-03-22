@@ -1,7 +1,8 @@
 ---
 title: Working days
 date: '2016-11-23'
-categories: [data]
+categories: ['data']
+tags: ['python']
 ---
 
 I’ve worked a lot with Excel spreadsheets on financial data. Among other things, I had to use working days. Excel provides a function (`WORKDAY`) to compute working days but holidays have to be provided manually and in France we have a lot of public holidays :-)---and they are not all anchored.

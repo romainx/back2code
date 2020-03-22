@@ -1,7 +1,8 @@
 ---
 title: Pandas pipes
 date: '2016-11-13'
-categories: [data]
+categories: ['data']
+tags: ['python']
 ---
 
 ![Magrittr](/post/pandas-pipes_files/magritrr.jpeg)

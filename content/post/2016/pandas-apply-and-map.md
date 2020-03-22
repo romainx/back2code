@@ -1,7 +1,8 @@
 ---
 title: Pandas apply and map
 date: '2016-11-20'
-categories: [data]
+categories: ['data']
+tags: ['python']
 ---
 
 The way to apply a function to pandas  data structures is not always obvious--several methods exist (`apply`, `applymap`, `map`) and their scope is different.

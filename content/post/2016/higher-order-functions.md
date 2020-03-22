@@ -1,7 +1,8 @@
 ---
 title: Higher-order Functions
 date: '2016-12-16'
-categories: [dev]
+categories: ['dev']
+tags: ['scala', 'r', 'python']
 ---
 
 **Martin Odersky**[^1] in his *Functional Programming in Scala* course illustrates **higher-order functions**[^2] with a simple example in Scala. Scala is a modern functional programming language where functions are *first-class citizen* so they can be used, like any other value, as a parameter and returned as a result.
