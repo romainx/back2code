@@ -2,7 +2,7 @@
 title: 'radian'
 date: '2020-01-08'
 categories: [data]
-tags: ['r']
+tags: ['R']
 ---
 
 I'm a big fan of console tools, and I was wondering if there was a way to **color the R console** output.

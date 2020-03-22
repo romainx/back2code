@@ -1,7 +1,8 @@
 ---
 title: Make Atom a great Markdown editor
 date: '2017-09-07'
-categories: [dev]
+categories: ['dev']
+tags: ['markdown']
 ---
 
 I use **Markdown** as much as I can but mainly to write blog posts and documentation. There are many great editors – at least on Mac – for Markdown but most of them are not free to use. Moreover, Ulysses just began a move, that others could follow, to a subscription model (~$5/month). Finally, I don’t want to avoid vendor lock-in and charging $40/year for plain text editing in a format designed to be usable from anywhere by **John Gruber** and **Aaron Swartz**.

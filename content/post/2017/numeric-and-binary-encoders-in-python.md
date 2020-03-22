@@ -1,8 +1,8 @@
 ---
 title: Numeric and Binary Encoders in Python
 date: '2017-09-24'
+categories: ['data']
 tags: ['python']
-categories: [data]
 ---
 
 > A categorical variable, as the name suggests, is used to represent categories or labels. For instance, a categorical variable could represent major cities in the world, the four seasons in a year, or the industry (oil, travel, technology) of a company. […] The categories of a categorical variable are usually not numeric. [..] Thus, an encoding method is needed to turn these non-numeric categories into numbers.[^1]

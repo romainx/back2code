@@ -1,8 +1,8 @@
 ---
 title: Outliers
 date: '2017-08-19'
+categories: ['data']
 tags: ['stats', 'python']
-categories: [data]
 ---
 
 # Definition

@@ -1,8 +1,8 @@
 ---
 title: General problem-solving techniques
 date: '2017-01-14'
+categories: ['dev']
 tags: ['method']
-categories: [dev]
 ---
 
 The book *Think like a programmer*[^1] is interesting because it does not only focus on coding. One of the most interesting chapter is related to **general problem-solving techniques**. I found it so great, that I wanted to write down the rules, in order to remind me later these useful advices--cherry on the cake, they can be applied to almost every problem.

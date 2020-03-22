@@ -2,7 +2,7 @@
 title: Spark on Kubernetes Python and R bindings
 date: '2018-12-28'
 categories: [data]
-tags: ['spark', 'kubernetes', 'python', 'r']
+tags: ['spark', 'kubernetes', 'python', 'R']
 ---
 
 The version `2.4` of Spark for Kubernetes introduces **Python and R bindings**.

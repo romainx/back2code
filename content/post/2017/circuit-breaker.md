@@ -1,8 +1,8 @@
 ---
 title: Circuit Breaker
 date: '2017-11-28'
+categories: ['dev', 'ops', 'book']
 tags: ['monitoring']
-categories: [dev, ops]
 ---
 
 **A circuit breaker** is a well known piece of technology used in — almost — every house. According to Wikipedia  it is

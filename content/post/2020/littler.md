@@ -2,7 +2,7 @@
 title: 'littler'
 date: '2020-01-06'
 categories: [data]
-tags: ['r']
+tags: ['R']
 ---
 
 `R` packages have often funny names. [littler](http://dirk.eddelbuettel.com/code/littler.html) stands for little `R`, this means lower case `r`.

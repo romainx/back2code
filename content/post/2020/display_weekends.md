@@ -2,7 +2,7 @@
 title: "Display Weekends in R Using Tsibble"
 date: '2020-03-22'
 categories: [data]
-tags: ['R']
+tags: ['R', 'viz']
 ---
 
 # Introduction

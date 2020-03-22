@@ -2,7 +2,7 @@
 title: Functional Sequences
 date: '2016-11-29'
 categories: ['data']
-tags: ['r']
+tags: ['R']
 ---
 
 This feature blew my mind. R permits to define **functional sequences**.
