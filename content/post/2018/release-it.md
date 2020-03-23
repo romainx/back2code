@@ -1,7 +1,7 @@
 ---
 title: Release It!
 date: '2018-04-28'
-categories: [ops, book]
+categories: ['ops', 'book']
 ---
 
 ![Book cover](/post/release-it_files/release-it.jpeg)

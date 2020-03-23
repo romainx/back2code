@@ -1,7 +1,7 @@
 ---
 title: Effective Monitoring and Alerting
 date: '2018-11-12'
-categories: [ops, book]
+categories: ['ops', 'book']
 tags: ['monitoring']
 ---
 

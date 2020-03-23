@@ -9,7 +9,7 @@ tags: ['R', 'viz']
 
 In the frame of the [Hackaviz2020](https://github.com/ToulouseDataViz/Hackaviz2020) organized by the [ToulouseDataViz](https://toulouse-dataviz.fr/), I had to work on displaying weekends on a plot. And, this is not so easy for a novice ...
 
-During this Hackaviz I've also discovered the Tidy dataframes for Time series called [`tsibble`](https://tsibble.tidyverts.org/) and its associated universe of **Tidy tools for time series**, [tidyverts](https://tidyverts.org). I will use them here to display weekends.
+During this Hackaviz I've also discovered the Tidy dataframes for Time series called [`tsibble`](https://tsibble.tidyverts.org/) and its associated universe of **Tidy tools for time series**, [tidyverts](https://tidyverts.org)---many thanks to my teammate for this tip. I will use them here to display weekends.
 
 # Finding Weekends
 

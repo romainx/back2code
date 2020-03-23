@@ -1,7 +1,7 @@
 ---
 title: Find Spark
 date: '2018-11-28'
-categories: [data]
+categories: ['data']
 tags: ['spark', 'python']
 ---
 
