@@ -150,4 +150,4 @@ Note that the BMI `bmi` unit is correct: `kg/m^2`.
 - [Is it possible to use ggplot with the units package in R?](https://stackoverflow.com/questions/61209769/is-it-possible-to-use-ggplot-with-the-units-package-in-r/)
 - [Measurement units in R](https://cran.r-project.org/web/packages/units/vignettes/measurement_units_in_R.html)
 
-[^1]: The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres [Wikipedia](https://en.wikipedia.org/wiki/Body_mass_index).
+[^1]: The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in meters [Wikipedia](https://en.wikipedia.org/wiki/Body_mass_index).

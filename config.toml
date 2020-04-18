@@ -36,7 +36,7 @@ summaryLength = 40
     url = "/post/"
     weight = 2
 
-# [[menu.main]]
-#    name = "Docs"
-#    url = "/docs/"
-#    weight = 3
+#[[menu.main]]
+#   name = "Snippets"
+#   url = "/snippets/"
+#   weight = 3
