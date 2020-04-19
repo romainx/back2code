@@ -12,17 +12,19 @@ After spending some time working more on **Excel** spreadsheets than coding, the
 
 I must be nostalgic since I love old languages and systems, and all these old stories of pioneers---I have a [great list of books](https://www.goodreads.com/review/list/3079764-romain?shelf=c_s_history) on that topic. I'm also a big fan of **plain text** and the various editors dedicated to this simple but fundamental purpose. Obviously I love **Markdown**, I use it as much as I can.
 
-I’m currently working on
+### Interest
 
-- Big Data Hadoop platform, 
-- Kubernetes & Docker,
-- Jupyter.
+* Hadoop & Spark,
+* Kubernetes & Docker,
+* Jupyter & RStudio,
+* Python & R,
+* Linux & open source.
 
-Contributions
+### Contributions
 
-- [Jupyter Docker Stacks](https://github.com/jupyter/docker-stacks)
-- [Pandas Profiling](https://github.com/pandas-profiling/pandas-profiling)
-- [Stack Overflow](https://stackoverflow.com/users/4413446/romain)
-- [GitHub](https://github.com/romainx)
+* [Jupyter Docker Stacks](https://github.com/jupyter/docker-stacks)
+* [Pandas Profiling](https://github.com/pandas-profiling/pandas-profiling)
+* [Stack Overflow](https://stackoverflow.com/users/4413446/romain)
+* [GitHub](https://github.com/romainx)
 
-I'm a book lover and I have a [blog](https://aubonroman.com) (in French) dedicated to my readings.
+I'm a book lover and I have a [blog](https://aubonroman.com) (in french) dedicated to my readings.

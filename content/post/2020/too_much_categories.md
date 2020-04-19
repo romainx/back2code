@@ -63,6 +63,7 @@ So it makes sense
 # References
 
 * [Lump together factor levels into "other"][LK3]
+* [Snippet: Reduce number of categories](https://gist.github.com/romainx/41c33556d736dd6f3c1e050d833563b1)
 
 [LK1]: {{< ref "may_the_force_be_with_the_units.md" >}}
 [LK2]: https://forcats.tidyverse.org/
