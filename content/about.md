@@ -26,5 +26,6 @@ I must be nostalgic since I love old languages and systems, and all these old st
 * [Pandas Profiling](https://github.com/pandas-profiling/pandas-profiling)
 * [Stack Overflow](https://stackoverflow.com/users/4413446/romain)
 * [GitHub](https://github.com/romainx)
+* [GoodReads](https://www.goodreads.com/user/show/3079764-romain)
 
 I'm a book lover and I have a [blog](https://aubonroman.com) (in french) dedicated to my readings.
