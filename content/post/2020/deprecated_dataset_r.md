@@ -120,7 +120,7 @@ legacy_mode <- function(envdir = parent.frame(), verbose = TRUE) {
 
 # Result
 
-And so now you have access **to both the new version of the dataset available by default and the legacy version if needed for compatibility reasons**.
+And so now you have access **to both the new version of the dataset available by default and the legacy version if needed for compatibility reasons**. If the legacy data is used, a **proper deprecation message** is displayed.
 
 ```R
 # The current version
