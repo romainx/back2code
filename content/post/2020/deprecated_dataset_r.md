@@ -28,7 +28,7 @@ $ mv ./data/my_data.rda ./data-raw/leg_my_data.rda
 
 ## Write a script to transform the dataset
 
-The code used to **transform the dataset from its legacy to its new format** is stored along with the legacy dataset in  `./data-raw/my_data.R`. This will make the **whole process reproducible**. 
+The code used to transform the dataset from its legacy to its new format is stored along with the legacy dataset in  `./data-raw/my_data.R`. This will make the **whole process reproducible**. 
 
 ```R
 # my_data new version
@@ -69,7 +69,7 @@ my_data
 
 ## Secret sauce
 
-In the `./R/my_package-package.R` file, create a **`legacy_mode` function**. This function will be a **way for the users to load the previous (legacy) version of the datasets if they need to use them for compatibility reason**.
+In the `./R/my_package-package.R` file, create a **`legacy_mode` function**. This function will be a way **for the users to load the previous (legacy) version of the datasets** if they need to use them for **compatibility reason**.
 
 ```R
 #' Load legacy version of datasets.
@@ -124,7 +124,7 @@ legacy_mode <- function(envdir = parent.frame(), verbose = TRUE) {
 
 ## Result
 
-And so now you have access **to both the new version of the dataset available by default and the legacy version if needed for compatibility reasons**. If the legacy data is used, a **proper deprecation message** is displayed.
+And so now you have access **to both the new version of the dataset available by default and the legacy version** if needed for compatibility reasons. If the legacy data is used, a proper deprecation message is displayed.
 
 ```R
 # The current version

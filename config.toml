@@ -174,7 +174,7 @@ theme = "LoveIt"
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar.jpeg"
+      avatarURL = "/images/avatar.png"
       #  title shown in home page
       title = ""
       # subtitle shown in home page
@@ -263,7 +263,7 @@ theme = "LoveIt"
       fullscreen = true
     #  social share links in post page
     [params.page.share]
-      enable = true
+      enable = false
       Twitter = true
       Facebook = true
       Linkedin = false
@@ -297,9 +297,9 @@ theme = "LoveIt"
       # Disqus comment config
       [params.page.comment.disqus]
         # 
-        enable = false
+        enable = true
         # Disqus shortname to use Disqus in posts
-        shortname = ""
+        shortname = "back2code"
       # Gitalk comment config
       [params.page.comment.gitalk]
         # 

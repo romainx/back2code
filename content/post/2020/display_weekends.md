@@ -5,13 +5,14 @@ categories: [data]
 tags: ['R', 'viz']
 ---
 
-# Introduction
-
 In the frame of the [Hackaviz2020](https://github.com/ToulouseDataViz/Hackaviz2020) organized by the [ToulouseDataViz](https://toulouse-dataviz.fr/), I had to work on displaying weekends on a plot. And, this is not so easy for a novice ...
+
+<!--more-->
 
 During this Hackaviz I've also discovered the Tidy dataframes for Time series called [`tsibble`](https://tsibble.tidyverts.org/) and its associated universe of **Tidy tools for time series**, [tidyverts](https://tidyverts.org)---many thanks to my teammate for this tip. I will use them here to display weekends.
 
-# Finding Weekends
+Finding Weekends
+----------------
 
 Let's start from an example, [`nycflights13`](https://github.com/hadley/nycflights13) containing all out-bound flights from NYC in 2013.
 The first objective is to identify weekends turn the dataset into a `tsibble`.
@@ -53,7 +54,8 @@ flights
 # … with 355 more rows
 ```
 
-# Plotting Weekends
+Plotting Weekends
+----------------
 
 To plot the weekends I did not want to use `geom_rect` like it is advised in some answers in SO since to use it it is required to define `xmin` and `xmax` what is tedious and require to build a specific non-tidy dataframe. Here is an approach using [`geom_tile`](https://ggplot2.tidyverse.org/reference/geom_tile.html).
 
@@ -82,9 +84,10 @@ flights %>%
     theme_minimal()
 ```
 
-![weekends](/post/display_weekends/weekends.png)
+{{< figure src="/images/display_weekends/weekends.png" title="Weekends pyjama" >}}
 
-# Conclusion
+Conclusion
+---------
 
 According to this plot, it seems that there is less flights leaving the NYC airport in 2013. Let's check it with the help of the `tsibble`. I want to check for each quarter if the average number of flights by day is lower during the weekends.
 
