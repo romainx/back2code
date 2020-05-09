@@ -196,8 +196,8 @@ theme = "LoveIt"
 
   # Social config about the author
   [params.social]
-    GitHub = "romainx"
     Stackoverflow = "4413446"
+    GitHub = "romainx"
     Goodreads = "3079764-romain"
 
   #  Page config
