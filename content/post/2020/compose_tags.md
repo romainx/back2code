@@ -5,13 +5,15 @@ categories: ['ops']
 tags: ['docker']
 ---
 
-Recently I answered to [a question on Stack Overflow](https://stackoverflow.com/questions/47327979/how-to-use-multiple-image-tags-with-docker-compose):
+Recently I answered [a question on Stack Overflow](https://stackoverflow.com/questions/47327979/how-to-use-multiple-image-tags-with-docker-compose)
 
 > How to use multiple image tags with docker-compose?
 
 The validated answer was based on `extends`, but it cannot by used anymore in Compose file format `3.x`. As suggested by a user, the [Extension fields](https://docs.docker.com/compose/compose-file/#extension-fields) capability added in the version `3.4` of Docker Compose can replace it to achieve the same goal: **reuse a single definition to set several tags**.
 
-# Use YAML extension to define multiple tags
+<!--more-->
+
+## Use YAML extension to define multiple tags
 
 Here is how to use `YAML` extensions in this case.
 
@@ -50,7 +52,7 @@ $ cat .env
 UBI_HTTPD_PATCH=1.0.1
 ```
 
-# Build images
+## Build images
 
 Images can be built now with all the defined tags.
 
