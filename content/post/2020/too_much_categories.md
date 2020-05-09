@@ -5,11 +5,11 @@ categories: ['data']
 tags: ['R']
 ---
 
-# Introduction
-
 By using the same fun analysis as in my [previous article][LK1], I would like too highlight a problem that often occurs, **dealing with too much categories (or factors as they are called in R) avoid to see clearly the big pictures**.
 
-# The problem
+<!--more-->
+
+## The problem
 
 To stick to my previous example, I want this time to check the Body Mass Index (BMI) by species. But in the `starwars` dataset **there is a bunch of species**, and it's not easy to visualize the result -- I have removed **Jabba the Hutt** since he crushes all the other categories that cannot be viewed at all, see my [previous article][LK1] for the full story.
 
@@ -26,9 +26,9 @@ starwars %>%
     theme_minimal()
 ```
 
-![Too many categories](/post/too_many_categories/too_many_categories.png)
+{{< figure src="/images/too_many_categories/too_many_categories.png" title="Too much categories" >}}
 
-# The solution
+## The solution
 
 The solution is **to lump together the less representative categories** (in this case the species) in a big category often called *Other*. R , in the package [**forcats**][LK2], provides a very convenient functions to perform this operation in different flavors `fct_lump`. I will use the `fct_lump_n` that
 
@@ -53,14 +53,14 @@ starwars %>%
     theme_minimal()
 ```
 
-![Top 5](/post/too_many_categories/top_5.png)
+{{< figure src="/images/too_many_categories/top_5.png" title="Top 5 !" >}}
 
 So it makes sense
 
 * the human specie fall in the standard BMI range for humans,
 * droids are heavier, it seems logical since they are made of metal as I far as I know.
 
-# References
+## References
 
 * [Lump together factor levels into "other"][LK3]
 * [Snippet: Reduce number of categories](https://gist.github.com/romainx/41c33556d736dd6f3c1e050d833563b1)
