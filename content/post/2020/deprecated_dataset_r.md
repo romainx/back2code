@@ -53,10 +53,12 @@ Source the file and you're good the new version is live!
 
 ```R
 source('./data-raw/my_data.R', echo=TRUE)
+
 # ✓ Saving 'my_data' to 'data/my_data.rda'
 # ● Document your data (see 'https://r-pkgs.org/data.html')
 
 my_data
+
 # A tibble: 10 x 2
 #   categ   val
 #   <fct> <int>
@@ -127,6 +129,7 @@ And so now you have access **to both the new version of the dataset available by
 ```R
 # The current version
 head(my_data, 3)
+
 # A tibble: 3 x 2
   categ   val
   <fct> <int>
@@ -136,6 +139,7 @@ head(my_data, 3)
 
 # Activation of the legacy mode
 legacy_mode()
+
 # Loading objects:
 #   my_data
 # Warning message:
@@ -143,6 +147,7 @@ legacy_mode()
 
 # Legacy version
 head(my_data, 3)
+
 # A tibble: 3 x 2
 #   cat     val
 #   <fct> <int>
@@ -166,6 +171,7 @@ Here is a way to create the example dataset used in this article.
 set.seed(2)
 my_data <- tibble(cat = factor(sample(c("a", "b", "c", "d"), 10, replace = TRUE)), 
        val = sample(1:10))
+
 # Writing the dataset
 usethis::use_data(my_data, overwrite = TRUE, compress = 'xz')
 
@@ -202,6 +208,7 @@ Document and export it.
 
 ```R
 devtools::document(roclets = c('rd', 'collate', 'namespace'))
+
 # Writing my_data.Rd
 # Writing NAMESPACE
 ```
@@ -210,10 +217,12 @@ It can now be seen in the package and used directly.
 
 ```R
 data(package="my_package")
+
 # Data sets in package ‘my_package’:
 # my_data         An example dataset
 
 my_data
+
 # A tibble: 10 x 2
 #   cat     val
 #   <fct> <int>

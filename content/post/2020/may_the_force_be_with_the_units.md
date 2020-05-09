@@ -5,13 +5,14 @@ categories: [data]
 tags: ['R']
 ---
 
-# Introduction
-
 When working with data it's very important to be aware of the unit of each variable. To make it **explicit** it's convenient to use the package called [`units`](https://github.com/r-quantities/units/).
+
+<!--more-->
 
 > Support for measurement units in R vectors, matrices and arrays: automatic propagation, conversion, derivation and simplification of units; raising errors in case of unit incompatibility. 
 
-# A simple example
+A simple example
+----------------
 
 By reading the help of the `starwars` dataset, we learn that
 
@@ -44,7 +45,8 @@ starwars %>%
 
 Note that units are nicely printed in the output.
 
-# Converting units
+Converting units
+----------------
 
 Imagine I want to draw a bar chart of the 5 first characters of the dataset. But I want the **scale to be defined in meters** instead of centimeters since it make it cleared to figure out the scale.
 However, it does not work as is. To make it work the package [`ggforce`](https://ggforce.data-imaginist.com/) is needed and more specifically, the [`scale_unit`](https://ggforce.data-imaginist.com/reference/scale_unit.html) function.
@@ -66,13 +68,14 @@ starwars %>%
     scale_x_discrete(guide = guide_axis(n.dodge = 2)) # To avoid overlapp in names
 ```
 
-![Size of the characters](/post/may_the_force_be_with_the_units/starwars_height.png)
+{{< figure src="/images/may_the_force_be_with_the_units/starwars_height.png" title="Size of characters" >}}
 
 Thanks to a call to `scale_y_unit(unit = "m")` I'm able to display the scale in meters.
 
 *Note: `x = reorder(name, -height)` is a trick to sort the bars by value (height in this case).*
 
-# Mixing units
+Mixing units
+------------
 
 If we try to check if **height is correlated to weight** we obtain this scatter plot.
 
@@ -86,7 +89,7 @@ starwars %>%
     geom_point(aes(x = mass, y = height))
 ```
 
-![Mass vs Height with outliers](/post/may_the_force_be_with_the_units/starwars_outliers.png)
+{{< figure src="/images/may_the_force_be_with_the_units/starwars_outliers.png" title="Mass vs Height with outliers" >}}
 
 There is a *big* outlier in this plot. Let's check who is it?
 
@@ -118,7 +121,7 @@ starwars %>%
     geom_point(aes(x = mass, y = height))
 ```
 
-![Mass vs Height without outliers](/post/may_the_force_be_with_the_units/starwars_without_outliers.png)
+{{< figure src="/images/may_the_force_be_with_the_units/starwars_without_outliers.png" title="Mass vs Height without outliers" >}}
 
 His Body Mass Index (BMI)[^1] should be very bad let's check it. Thanks to the `units` package it's **pretty straightforward and explicit**.
 
@@ -145,7 +148,8 @@ starwars %>%
 
 Note that the BMI `bmi` unit is correct: `kg/m^2`.
 
-# References
+References
+----------
 
 - [Is it possible to use ggplot with the units package in R?](https://stackoverflow.com/questions/61209769/is-it-possible-to-use-ggplot-with-the-units-package-in-r/)
 - [Measurement units in R](https://cran.r-project.org/web/packages/units/vignettes/measurement_units_in_R.html)

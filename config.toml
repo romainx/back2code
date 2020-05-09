@@ -57,9 +57,9 @@ theme = "LoveIt"
   #  LoveIt theme version
   version = "0.2.X"
   # site description
-  description = "This is My New Hugo Site"
+  description = "Technical blog about Dev, Data, Ops and books"
   # site keywords
-  keywords = ["Theme", "Hugo"]
+  keywords = ["Dev", "Data", "Ops", "Books", "Python", "R", "Docker"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
@@ -118,11 +118,11 @@ theme = "LoveIt"
     #  Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "/images/logo.png"
+      logo = ""
       # title name
-      name = ""
+      name = "Back 2 Code"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = ""
+      pre = "<i class='fas fa-beer'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       #  whether to use typeit animation for title name
