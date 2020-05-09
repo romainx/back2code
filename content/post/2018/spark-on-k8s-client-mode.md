@@ -129,5 +129,5 @@ And also in the Spark UI without the need to forward a port since the driver run
 At the end of the shell, the executors are terminated. Cool!
 
 [lk-1]: http://spark.apache.org/docs/latest/submitting-applications.html#launching-applications-with-spark-submit
-[lk-2]: {{< ref "/post/2018/spark-on-k8s-first-run.md" >}}
-[lk-3]: {{< ref "/post/2018/spark-on-k8s-bindings.md" >}}
+[lk-2]: {{< ref "spark-on-k8s-first-run.md" >}}
+[lk-3]: {{< ref "spark-on-k8s-bindings.md" >}}

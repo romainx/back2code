@@ -10,7 +10,9 @@ Unfortunately I was not able to find a convenient out-of-the-box solution, see [
 
 So after a first draft, I've applied a process that seems to be a reasonable--good enough--solution.
 
-# Move the data file
+<!--more-->
+
+## Move the data file
 
 The first step is to **move the data file** from its default location `./data` to another location in order to avoid its automatic loading--even if it's a lazy loading.
 
@@ -24,7 +26,7 @@ I'm using by convention a `leg_` prefix to flag it as a **legacy dataset**.
 $ mv ./data/my_data.rda ./data-raw/leg_my_data.rda
 ```
 
-# Write a script to transform the dataset
+## Write a script to transform the dataset
 
 The code used to **transform the dataset from its legacy to its new format** is stored along with the legacy dataset in  `./data-raw/my_data.R`. This will make the **whole process reproducible**. 
 
@@ -63,7 +65,7 @@ my_data
 # 3 a         4
 ```
 
-# Secret sauce
+## Secret sauce
 
 In the `./R/my_package-package.R` file, create a **`legacy_mode` function**. This function will be a **way for the users to load the previous (legacy) version of the datasets if they need to use them for compatibility reason**.
 
@@ -118,7 +120,7 @@ legacy_mode <- function(envdir = parent.frame(), verbose = TRUE) {
 }
 ```
 
-# Result
+## Result
 
 And so now you have access **to both the new version of the dataset available by default and the legacy version if needed for compatibility reasons**. If the legacy data is used, a **proper deprecation message** is displayed.
 
@@ -151,13 +153,13 @@ head(my_data, 3)
 
 Do not forget to **document your changes** by updating the dataset documentation in `R/my_data.R`. You can mention in a note the **legacy mode**.
 
-# Notes
+## Notes
 
-## Example
+### Example
 
 Here is a way to create the example dataset used in this article.
 
-### Create and save the dataset
+#### Create and save the dataset
 
 ```R
 # A test data frame
@@ -171,7 +173,7 @@ usethis::use_data(my_data, overwrite = TRUE, compress = 'xz')
 # ● Document your data (see 'https://r-pkgs.org/data.html')
 ```
 
-### Document and export the dataset
+#### Document and export the dataset
 
 Document the dataset by creating the following R script `R/my_data.R`.
 
@@ -219,7 +221,7 @@ my_data
 # 2 c         2
 ```
 
-## References
+### References
 
 * [Data Deprecation in R-package][LK1]
 * [Data chapter in the book *R packages*][LK2]

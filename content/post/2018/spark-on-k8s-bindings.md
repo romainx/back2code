@@ -70,4 +70,4 @@ $ k delete ns spark
 ```
 
 [lk-1]: https://databricks.com/blog/2018/09/26/whats-new-for-apache-spark-on-kubernetes-in-the-upcoming-apache-spark-2-4-release.html
-[lk-2]: {{< ref "/post/2018/spark-on-k8s-first-run.md" >}}
+[lk-2]: {{< ref "spark-on-k8s-first-run.md" >}}

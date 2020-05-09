@@ -102,5 +102,5 @@ We can see in the history server UI (cf. [Spark History Server available in dock
 
 ![history server ui](/post/2018/sparklyr-dplyr_files/sparklyr-job-ui.png)
 
-[LK-1]: {{< ref "/post/2018/configure-sparklyr-to-connect-to-a-standalone-spark-cluster.md" >}}
-[LK-2]: {{< ref "/post/2018/spark-history-server.md" >}}
+[LK-1]: {{< ref "configure-sparklyr-to-connect-to-a-standalone-spark-cluster.md" >}}
+[LK-2]: {{< ref "spark-history-server.md" >}}

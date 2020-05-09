@@ -4,8 +4,6 @@ date: "2020-03-21"
 type: "page"
 ---
 
-![book cover](/about/avatar.png)
-
 My first contact with code was---like for a lot of people belonging to my generation---with **BASIC** on a CRT TV screen loading files from a tape recorder. Then I learned **C** and the great magical world of Objects with **Java**. But I was a bit upset by its growing complexity and the need to write a bunch of useless code.
 
 After spending some time working more on **Excel** spreadsheets than coding, the simplicity of **Python** gives me a fresh wind and now I use it for almost everything. One of those things is *data science* and I've played---and also worked---a lot with its data ecosystem centered around *pandas* in *Jupyter notebooks*. I have also worked with its friend and competitor **R** and I must confess that, after a first disappointing experience, I come back to R with a great enthusiasm thanks to the awesome work done on the Tidyverse by one of the data science superhero [Hadley Wickham](http://hadley.nz/). After Batman vs. Superman this is Hadley vs. [Wes McKinney](http://wesmckinney.com/). 

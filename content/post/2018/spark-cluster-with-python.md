@@ -96,7 +96,7 @@ print('Pi is roughly {}'.format(4.0 * count / NUM_SAMPLES))
 # Pi is roughly 4.0
 ```
 
-[LK-1]: {{< ref "/post/2018/configure-sparklyr-to-connect-to-a-standalone-spark-cluster.md" >}}
+[LK-1]: {{< ref "configure-sparklyr-to-connect-to-a-standalone-spark-cluster.md" >}}
 [LK-2]: https://github.com/gettyimages/docker-spark
-[LK-3]: {{< ref "/post/2018/find-spark.md" >}}
+[LK-3]: {{< ref "find-spark.md" >}}
 [LK-4]: http://spark.apache.org/docs/latest/configuration.html#environment-variables
