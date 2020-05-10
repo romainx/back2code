@@ -1,7 +1,6 @@
 baseURL = "https://www.back2code.me/"
 title = "Back 2 Code"
-googleAnalytics = "UA-127828717-1"
-disqusShortname = "back2code"
+
 #paginate = 12
 #summaryLength = 40
 
@@ -400,7 +399,7 @@ theme = "LoveIt"
     enable = false
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "UA-127828717-1"
       # whether to anonymize IP
       anonymizeIP = true
       # whether to use cookie
