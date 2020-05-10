@@ -11,7 +11,7 @@ Molecule encourages an approach that results in consistently developed roles tha
 
 [Molecule](https://molecule.readthedocs.io/)
 
-# Installation
+## Installation
 
 ```bash
 $ conda create -n molecule python=3.7
@@ -21,7 +21,7 @@ $ conda install -c conda-forge ansible docker-py docker-compose molecule
 $ pip install ansible docker docker-compose molecule
 ```
 
-# Main features
+## Main features
 
 - Cookiecutter to create role from a standardized template.
 - Check role syntax and raise syntax errors.
@@ -32,9 +32,9 @@ $ pip install ansible docker docker-compose molecule
 
 Great to **develop**, **test** and **validate Ansible roles** within an **industrial process**.
 
-# Detail
+## Detail
 
-## Create role
+### Create role
 
 This acts as a **cookiecutter** to create a role from a pre-defined template.
 
@@ -71,7 +71,7 @@ $ tree molecule-role
 #     └── main.yml
 ```
 
-## Check syntax
+### Check syntax
 
 Verifies the role for syntax errors. Saves time instead of finding error when running the playbook on a host.
 
@@ -79,7 +79,7 @@ Verifies the role for syntax errors. Saves time instead of finding error when ru
 $ molecule syntax
 ```
 
-## Lint
+### Lint
 
 Executes `yaml-lint`, `ansible-lint`, and `flake8`, reporting failure if there are issues.
 
@@ -87,7 +87,7 @@ Executes `yaml-lint`, `ansible-lint`, and `flake8`, reporting failure if there a
 molecule lint
 ```
 
-### Configuration of linters
+#### Configuration of linters
 
 The linters for example `yaml-lint` can be customized in the `molecule.yml` file or in a `.yamlint` file.
 
@@ -117,7 +117,7 @@ verifier:
     enabled: false
 ```
 
-## Create instances
+### Create instances
 
 Create an instance with the configured driver and configure instances with preparation playbooks.
 
@@ -156,7 +156,7 @@ platforms:
 
 Can be configured to pull images from private registries with authentication. Check [here](https://molecule.readthedocs.io/en/stable/configuration.html#docker).
 
-## Prepare / Cleanup
+### Prepare / Cleanup
 
 > The prepare playbook executes actions which bring the system to a given state prior to converge. It is executed after create, and only once for the duration of the instances life.
 This can be used to bring instances into a particular state, prior to testing.
@@ -175,7 +175,7 @@ provisioner:
     cleanup: cleanup.yml
 ```
 
-## Converge (run)
+### Converge (run)
 
 Execute (run) playbooks targeting hosts. In fact the playbook `playbook.yml` inside the `molecule` folder is run.
 
@@ -183,7 +183,7 @@ Execute (run) playbooks targeting hosts. In fact the playbook `playbook.yml` ins
 $ molecule converge
 ```
 
-## Login
+### Login
 
 It's a handy feature that permit to login into the running instances for troubleshooting or testing commands. Instances have to be created (need to run)  to be able to use this command
 
@@ -193,7 +193,7 @@ $ molecule login --host ubi_7
 $ molecule login
 ```
 
-## Idempotence
+### Idempotence
 
 Execute a playbook twice and fails in case of changes in the second run (non-idempotent).
 
@@ -201,7 +201,7 @@ Execute a playbook twice and fails in case of changes in the second run (non-ide
 $ molecule idempotence
 ```
 
-## Verify
+### Verify
 
 Execute server state verification tools (`testinfra` or `goss`).
 
@@ -209,7 +209,7 @@ Execute server state verification tools (`testinfra` or `goss`).
 $ molecule verify
 ```
 
-## Destroy
+### Destroy
 
 Destroy instances.
 
@@ -217,7 +217,7 @@ Destroy instances.
 $ molecule destroy
 ```
 
-## Test
+### Test
 
 Executes **all the previous steps**. So in this case all the workflow is started from scratch.
 
@@ -241,8 +241,9 @@ $ molecule test
 #     └── destroy
 ```
 
-# Tips
+## Tips
 
+{{< admonition type=tip title="Ansible for humans" open=true >}}
 Configure ansible `stdout` to `yaml` to improve human reading experience.
 
 ```yaml
@@ -253,8 +254,10 @@ provisioner:
 			# Part of ansible.cfg configuration to improve reading experience
       stdout_callback: yaml
 ```
+{{< /admonition >}}
 
-# References / Further reading
+
+## References / Further reading
 
 - [Test-driven infrastructure development with Ansible & Molecule - codecentric AG Blog](https://blog.codecentric.de/en/2018/12/test-driven-infrastructure-ansible-molecule/)
 - [Testing your Ansible roles with Molecule](https://www.jeffgeerling.com/blog/2018/testing-your-ansible-roles-molecule)

@@ -8,7 +8,9 @@ tags: ['haskell']
 While I was reading *Seven Languages in Seven Weeks* [^RF:Tate_2010], I wanted to test **Haskell**.
 Just for fun.
 
-# Running Haskell
+<!--more-->
+
+## Running Haskell
 
 To run Haskell one solution is to use a **Docker image**. 
 It avoids the burden of installing it on your machine.
@@ -45,7 +47,7 @@ $ make
 Prelude>
 ```
 
-# Playing with it
+## Playing with it
 
 Now you can start playing.
 
@@ -56,7 +58,7 @@ Prelude> double 4
 8
 ```
 
-# Next steps
+## Next steps
 
 My advice is to read the great book *Learn You a Haskell for Great Good!* [^RF:Lipovaca_2011].
 Even better, it can be read [online](http://learnyouahaskell.com/) for free.
