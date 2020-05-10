@@ -9,7 +9,9 @@ tags: ['docker']
 > 
 > --- <cite>[A preview of running containers without root in RHEL 7.6][LK2]</cite> 
 
-# Docker the root of all evil?
+<!--more-->
+
+## Docker the root of all evil?
 
 In fact it's exactly what is mentioned in the quote. The docker daemon itself runs as `root`. 
 
@@ -62,7 +64,7 @@ $ sudo ls -alsh /var/lib/docker
 # [...]
 ```
 
-# Podman to the rescue!
+## Podman to the rescue!
 
 > What is Podman? Podman is a daemonless container engine for developing, managing, and running OCI Containers on your Linux System. Containers can either be run as root or in rootless mode. Simply put: `alias docker=podman`. More details [here](https://podman.io/whatis.html). 
 > --- <cite>https://podman.io</cite>

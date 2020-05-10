@@ -7,6 +7,8 @@ tags: ['python']
 
 It's always a good practice to **deprecate** functions, methods or classes before removing or changing something.
 
+<!--more-->
+
 > Features are deprecated rather than immediately removed, to provide backward compatibility, and to give programmers time to bring affected code into compliance with the new standard.
 >
 > --- <cite>[Deprecation](https://en.wikipedia.org/wiki/Deprecation)</cite>
@@ -22,13 +24,13 @@ There is several implementations, I've chosen [Deprecated](https://github.com/ta
   In fact my first need was to print this warning clearly in Jupyter notebooks,
 - it provides a very convenient way to deprecate things through a **decorator**. 
 
-# Install
+## Install
 
 ```bash
 $ pip install deprecated
 ```
 
-# Deprecate things
+## Deprecate things
 
 ```python
 from deprecated import deprecated
@@ -47,7 +49,7 @@ def new_function():
 # I'm old now I want to retire...
 ```
 
-# How it works
+## How it works
 
 It uses a Python standard library called `warnings`[^1]. 
 

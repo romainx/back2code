@@ -7,7 +7,9 @@ tags: ['docker', 'kubernetes']
 
 After my [previous article][LK2] on zombie processes I was curious to see if and how they can affect containers running in a Kubernetes (K8S) cluster.
 
-# First try
+<!--more-->
+
+## First try
 
 A simple descriptor to deploy the container.
 
@@ -40,7 +42,7 @@ $ k logs zombie-init
 
 We can observe the same behavior a already observed in the previous article. A zombie process (`defunct`) has not been reaped since the `PID 1` process (it's parent) has not played this role.
 
-# Reaping zombies
+## Reaping zombies
 
 To benefit from a proper `init` process that will take care of reaping zombies, we have to tell Kubernetes to enable **PID sharing between the containers that are running in the POD**. This is done by specifying `shareProcessNamespace: true`. So the deployment looks now like this.
 
@@ -77,7 +79,7 @@ In the log, we can see that the zombie process has been reaped without specifyin
 
 If namespace sharing is not enabled each container has to do it's own housekeeping---it could not be a problem at all if the process running in the container does not spawn other processes. The problem can also be solved by using an `init` process inside each container like it has been demonstrated in the [previous article][LK2].
 
-# References / Further reading
+## References / Further reading
 
 - [The Almighty Pause Container][LK1]
 - [POD-PID-NAMESPACE / SHARED PID NAMESPACE][LK3]

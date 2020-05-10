@@ -5,9 +5,9 @@ categories: [ops]
 tags: ['docker']
 ---
 
-# Introduction
-
 Among its catalog of **Universal Base Images** (UBI), **Red Hat** provides a kind / flavor prefixed `init`.
+
+<!--more-->
 
 > The UBI `ubi8-init` images contains the `systemd` initialization system, making them useful for building images in which you want to run `systemd` services, such as a web server or file server. [...]  
 > In `ubi8-init`, the `Cmd` is set to `/sbin/init`, instead of `bash`, to start the `systemd` Init service by default. It includes `ps` and `process` related commands (`procps-ng` package), which `ubi8` does not. [...]  
@@ -31,7 +31,7 @@ The point seems to be---quick disclaimer: I'm not a specialist at all of this to
 >
 > --- <cite>[Running systemd in a non-privileged container][LK-2]</cite>
 
-# First try
+## First try
 
 ```bash
 $ docker run --name ubi-init -d --rm registry.access.redhat.com/ubi8/ubi-init
@@ -49,7 +49,7 @@ $ docker exec -it ubi-init systemctl --type=service
 # Failed to connect to bus: Host is down
 ```
 
-# Privileged mode
+## Privileged mode
 
 To run `systemd` expects a certain number of things, see [Running systemd in a non-privileged container][LK-2] for the detail. A simple way to make it work is to run docker in **privileged** mode.
 
@@ -75,7 +75,7 @@ docker exec ubi-init systemctl status httpd
 
 Now the Apache start page should be displayed in your preferred web browser at [http://localhost](http://localhost).
 
-# From a docker image
+## From a docker image
 
 By defining a simple docker image for that the advantage in terms of simplicity and standardisation are obvious.
 
@@ -99,7 +99,7 @@ $ docker build --rm --pull -t httpd-init .
 $ docker run --privileged --name httpd-init -d --rm -p 80:80 httpd-init
 ```
 
-# Quick exploration
+## Quick exploration
 
 We can check that the logs are written in the journal.
 
@@ -122,7 +122,7 @@ What is the problem?
 > 
 > --- <cite>[How to run systemd in a container][LK-4]</cite>
 
-# Next
+## Next
 
 To go further it could be interesting to have a look at [Podman](https://podman.io/).  
 [This article][LK-4] explains how and the advantages of using this setup.

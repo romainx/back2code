@@ -7,6 +7,8 @@ tags: ['docker']
 
 I was wondering the effect of merging layers (squashing) on the size of an image. Now Docker provides an experimental `--squash` option for the build.
 
+<!--more-->
+
 > Squash newly built layers into a single new layer
 
 In order to illustrate the impact I have chosen a simple example that has room to be improved by squashing layers.
@@ -69,7 +71,7 @@ Summary
 - Size: **1.48GB** -- ouch
 - Nb layers: **5**
 
-# Squash
+## Squash
 
 Let's try the new `--squash` option. To be able to use this option you have to **turn on experimental feature on the Docker daemon**.
 
@@ -113,7 +115,7 @@ Summary
 - Size: **1.29GB** -> **~ -190MB (-13%)** not so bad
 - Nb layers: **4**
 
-# Explanation
+## Explanation
 
 The size reduction is not magical. Squashing layers avoid to store one layer before the clean step and one layer after. In consequence only the cleaned layer is kept and so the saving is directly related to the cleaning. We can check if this hypothesis is valid by performing the `clean` manually in the image.
 
@@ -136,11 +138,11 @@ $ du -s -B MB /opt/conda
 
 It's consistent since we can see that the ~190 MB are saved by the `clean` step.
 
-# Alternatives
+## Alternatives
 
 There is some alternatives to the `--squash` options however it's always a tradeoff with something else.
 
-## Crafting `Dockerfiles`
+### Crafting `Dockerfiles`
 
 Best practices on building `dockerfiles` have led to avoid this inconvenient by using big one-liner commands.
 The drawback is that `dockerfiles` loose in readability and some of them end with endless one-liner spanning on multiple lines--it's a paradox.
@@ -188,15 +190,15 @@ $ squash docker history pandas
 
 As expected the result is the same with a crafted `Dockerfile`.
 
-## Multi-stage builds
+### Multi-stage builds
 
 The idea is to use a multi-stage build to copy all the layers into a single layer. I think this is the worst thing to do however I mention it since this solution is discussed see [here](https://github.com/moby/moby/issues/34565) for example. For this reason I will not develop this solution. If you are interested in finding alternatives, see also [this question](https://stackoverflow.com/questions/55220569/alternative-to-using-squash-when-building-docker-images-on-windows-using-local) on SO.
 
-## Buildah
+### Buildah
 
 Using the [Buildah](https://github.com/containers/buildah) tool to build images also offer a `--squash` option.
 
-# Wrap up
+## Wrap up
 
 Squashing image at the build has several benefits
 

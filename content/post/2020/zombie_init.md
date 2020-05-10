@@ -5,13 +5,15 @@ categories: [ops]
 tags: ['docker']
 ---
 
-# Zombie processes, a short definition
+## Zombie processes, a short definition
 
 The first step is an **orphaned** process, a process that has lost his parent.
 
 > Suppose the parent process terminates, either intentionally (because the program logic has determined that it should exit), or caused by a user action (e.g. the user killed the process). What happens then to its children? They no longer have a parent process, so they become "orphaned" (this is the actual technical term).
 >
 > --- <cite>[source][LK-1]</cite>
+
+<!--more-->
 
 The init process is responsible of **adopting** orphaned processes and to **reap** them, i.e. to clean it up.
 
@@ -21,7 +23,7 @@ If like in standard docker container launching a command, there is no proper `in
 
 > As long as a zombie is not removed from the system via a wait, it will consume a slot in the kernel process table, and if this table fills, it will not be possible to create further processes
 
-# Producing a zombie process
+## Producing a zombie process
 
 To generate a zombie process I have used the Python code displayed in [this issue](https://github.com/Yelp/dumb-init/issues/128).
 
@@ -70,11 +72,11 @@ $ docker run --rm zombie-init
 
 We can observe a zombie (`defunct`) process that is orphan, it has the `PID #7`. This process will remain here since there is no process that will care about reaping (removing) it. In this case it's not an issue, but imagine if the main process you are running creates a lot of child processes (like in a loop) that become orphans and then zombies.
 
-# Killing zombies
+## Killing zombies
 
 How to get rid of zombies?
 
-## Use the docker `--init` flag
+### Use the docker `--init` flag
 
 Since the Docker `1.13` version there is a special `--init` flag that can be used to tell Docker to use an init system that will reap zombies.
 
@@ -95,9 +97,9 @@ $ docker run --init --rm zombie-init
 # root         9  0.0  0.1   9392  3004 ?        R    09:42   0:00  \_ ps xawuf
 ```
 
-Yes it works the `defunct` process (`#8`) is gone!
+Yes, it works the `defunct` process (`#8`) is gone!
 
-## Using an `init` for containers
+### Using an `init` for containers
 
 There are several `init` solutions for containers and mainly
 
@@ -128,7 +130,7 @@ It is included in some base images and can also be installed through `conda`.
 $ conda install -c conda-forge tini
 ````
 
-# References / Further reading
+## References / Further reading
 
 - [Docker and the PID 1 zombie reaping problem][LK-1]
 - [Docker - init, zombies - why does it matter?](https://stackoverflow.com/questions/49162358/docker-init-zombies-why-does-it-matter/)

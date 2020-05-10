@@ -1,11 +1,13 @@
 ---
-title: 'littler'
+title: 'Littler'
 date: '2020-01-06'
 categories: [data]
 tags: ['R']
 ---
 
 `R` packages have often funny names. [littler](http://dirk.eddelbuettel.com/code/littler.html) stands for little `R`, this means lower case `r`.
+
+<!--more-->
 
 > littler provides the `r` program, a simplified command-line interface for GNU R. This allows direct execution of commands, use in piping where the output of one program supplies the input of the next, as well as adding the ability for writing *hash-bang* scripts, i.e. creating executable files starting with, say, `#!/usr/bin/r`.
 

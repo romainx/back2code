@@ -5,7 +5,7 @@ categories: [book]
 tags: ['method']
 ---
 
-# Three phases
+## Three phases
 
 In his book *Elastic Leadership* [^1], **Roy Osherove** talks about an interesting principle he call the **Three team phases**. If you are a team leader or just a team member your team should be in one of these three phases.
 
@@ -15,7 +15,7 @@ In his book *Elastic Leadership* [^1], **Roy Osherove** talks about an interesti
 
 > You can tell you're in the self-organizing phase if you can leave work for a few days without being afraid to turn off your cell phone and laptop. If you can do that, come back, and find that things are going well, your team is in the unique position of solving their own problems without your help.
 
-# Three styles of leadership
+## Three styles of leadership
 
 One of the thing I found very smart in his analysis is **the adaptation of the style of leadership according to the phase**.
 
