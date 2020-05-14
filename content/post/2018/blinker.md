@@ -9,6 +9,8 @@ I’m using [Pelican](https://blog.getpelican.com/) for [another blog](http://ww
 
 > Blinker provides fast & simple object-to-object and broadcast signaling for Python objects.
 
+<!--more-->
+
 It provides a way to **communicate between objects through signals** (a kind of event). I really found this way of working handy and elegant so I decided to have a closer look and to talk a bit about it.
 
 It can be installed using pip: `$ pip install blinker`

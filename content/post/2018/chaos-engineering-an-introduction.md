@@ -9,6 +9,8 @@ categories: [ops]
 > **Chaos Engineering** is the discipline of experimenting on a distributed system in order to build confidence in the system’s capability to withstand turbulent conditions in production.
 -- *[Principles of Chaos](http://principlesofchaos.org/)*
 
+<!--more-->
+
 **Netflix** has been a practitioner of **Chaos Engineering** for a long time and at the origin of what can be called now **a discipline** -- some organizations have a dedicated chaos engineering team.
 Testing is about performing well defined tests in well defined conditions and expecting a well known answer. **Chaos Engineering** is more about **conducting experiments by producing a failure and learning from it** (how the system behave). According to the result it could be time to work on improving things.
 

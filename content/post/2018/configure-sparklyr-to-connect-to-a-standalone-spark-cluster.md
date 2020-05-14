@@ -5,12 +5,12 @@ categories: [data]
 tags: ['spark','R']
 ---
 
-# Run a Standalone Spark Cluster
-
-One of the simplest way to run a standalone spark cluster is to use
+One of the simplest way to run a **standalone spark cluster** is to use
 Docker!
 
-*   [GitHub - gettyimages/docker-spark: Docker build for Apache
+<!--more-->
+
+* [GitHub - gettyimages/docker-spark: Docker build for Apache
     Spark](https://github.com/gettyimages/docker-spark)
 
 ```bash
@@ -47,7 +47,7 @@ tell the master to allocate 1 core by default.
 spark.deploy.defaultCores 1
 ```
 
-# Using Spark with Sparklyr
+## Using Spark with Sparklyr
 
 In order to be able to connect to the cluster you need to have the Spark
 libraries installed locally (i.e. where you R code will run). In our
@@ -112,7 +112,7 @@ Once done you can stop the Spark context.
 spark_disconnect(sc)
 ```
 
-# References
+## References
 
 
 * [Home page of Sparklyr](https://spark.rstudio.com/)

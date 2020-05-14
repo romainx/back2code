@@ -7,9 +7,12 @@ draft: true
 
 For **testing purpose**  I'm using the Kubernetes cluster shipped with the Docker Desktop client (`docker-for-desktop`).
 I want to avoid to go through [Docker Hub][lk-1] each time I want to build an image to run it in my Kubernetes local cluster.
+
+<!--more-->
+
 To solve this problem I've setup a local registry that runs in the docker on my machine. I can push images to this local registry that are directly available from the Kubernetes cluster.
 
-# Declare the insecure registry
+## Declare the insecure registry
 
 To be able to use a local non secure registry you have first to declare it.
 
@@ -21,7 +24,8 @@ xxx.x
 ```
 You have to declare the `MY_IP:5000` as an insecure registry in Docker client and apply and restart to  change.
 
-![](/post/2018/docker-local-registry_files/docker-registry.png)
+{{< figure src="/images/docker-local-registry_files/docker-registry.png" title="Docker settings" >}}
+
 
 # Start the registry
 
@@ -36,7 +40,7 @@ $ curl -i $MY_IP:5000
 HTTP/1.1 200 OK
 ```
 
-# Push an image in the registry
+## Push an image in the registry
 
 To be able to use it from Kubernetes you have first to push an image to it. For the example I'm reusing the image `luksa/kubia` from the great book *Kubernetes in Action*[^1].
 
@@ -51,7 +55,7 @@ $ curl -X GET http://$MY_IP:5000/v2/_catalog
 {"repositories":["kubia"]}
 ```
 
-# Use the image from the Kubernetes cluster
+## Use the image from the Kubernetes cluster
 
 Now that the image is available in the local registry, I can use it from the Kubernetes cluster.
 
@@ -89,6 +93,7 @@ When you're done, you can simply stop the local registry.
 # How to clean things up at the end
 $ docker container stop registry && docker container rm -v registry
 ```
+
 [lk-1]: https://hub.docker.com/
 [lk-2]: https://docs.docker.com/registry/#basic-commands
 

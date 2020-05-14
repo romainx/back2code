@@ -7,12 +7,14 @@ tags: ['aws']
 
 I explain here how to interact with AWS either with the **CLI** (Command Line Interface) and with an IT automation tool: **Ansible**. Ansible is not the first tool that comes in mind for AWS (Serverless, Terraform or the built-in CloudFormation make more sense) however Ansible could be useful if you just want to configure some EC2 and specially if you have already an Ansible script somewhere around.
 
-# Prerequisites
+<!--more-->
+
+## Prerequisites
 
 I'm using an Anaconda as the python distribution, it’s not required but I find this distribution practical to use. I’m assuming either Anaconda or Miniconda is already installed. Please refer to [Anaconda Installation page] (https://conda.io/docs/installation.html) if it’s not the case.
 You will also need AWS **Access and Secret Key pair**. If you do not know how to get them, check [this blog post](https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/).
 
-## Conda environment
+### Conda environment
 
 Setting up a fresh `conda` environment with the latest python version and giving it a meaningful name `aws`.
 
@@ -22,7 +24,7 @@ Activating the newly created environment
 
 `$ source activate aws`
 
-# AWS CLI
+## AWS CLI
 
 Installing the AWS CLI.
 
@@ -37,7 +39,7 @@ aws-cli/1.15.19 Python/3.6.5 Darwin/17.5.0 botocore/1.10.19
 
 *Note: It's possible to define all the environment configuration in a `YAML` definition file. But here we are doing it step by step.*
 
-# Configuring AWS CLI
+## Configuring AWS CLI
 
 Simple as answering to the questions.
 
@@ -57,7 +59,8 @@ $ aws ec2 describe-instances
 ...
 ````
 
-# Ansible
+## Ansible
+
 Installing Ansible
 
 ```bash
