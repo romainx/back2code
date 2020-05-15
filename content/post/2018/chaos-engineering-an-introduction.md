@@ -4,7 +4,9 @@ date: '2018-05-01'
 categories: [ops]
 ---
 
-![chaos](/post/chaos-engineering-an-introduction_files/chaos.png)
+
+
+{{< figure src="/images/chaos-engineering-an-introduction_files/chaos.png" title="Chaos Engineering. Building Confidence in System Behavior through Experiments" >}}
 
 > **Chaos Engineering** is the discipline of experimenting on a distributed system in order to build confidence in the system’s capability to withstand turbulent conditions in production.
 -- *[Principles of Chaos](http://principlesofchaos.org/)*
