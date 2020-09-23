@@ -11,6 +11,8 @@ In this case [Pytest][LK1] + [testinfra][LK2] is a terrific combo to perform thi
 
 <!--more-->
 
+# A simple example
+
 In a few lines of code you can easily test that some commands are working.
 
 ```python
@@ -49,6 +51,8 @@ PASSED smoke_tests.py::test_command[local-Python]
 PASSED smoke_tests.py::test_command[local-Node]
 =========== 1 failed, 4 passed in 0.22s ===========
 ```
+
+# Going further
 
 It's only a simple example however it is interesting since it's reproducible and will do the tedious work for you.
 Beyond this simple example this smoke test can
