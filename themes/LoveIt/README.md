@@ -110,8 +110,10 @@ I hope you will LoveIt ❤️!
 * **Bilibili player** shortcode
 * Kinds of **admonitions** shortcode
 * **Custom style** shortcode
+* **Custom script** shortcode
 * **Animated typing** supported by [TypeIt](https://typeitjs.com/)
 * **Dynamic scroll** supported by [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+* **Cookie consent banner** supported by [cookieconsent](https://github.com/osano/cookieconsent)
 * ...
 
 ## [Documentation](https://hugoloveit.com/categories/documentation/)
@@ -135,6 +137,9 @@ LoveIt supports the following languages:
 * Spanish
 * German
 * Serbian
+* Russian
+* Romanian
+* Vietnamese
 * [Contribute with a new language](https://github.com/dillonzq/LoveIt/pulls)
 
 [Languages Compatibility](https://hugoloveit.com/theme-documentation-basics/#language-compatibility)
@@ -174,7 +179,18 @@ Thanks to the authors of following resources included in the theme:
 * [MetingJS](https://github.com/metowolf/MetingJS)
 * [Gitalk](https://github.com/gitalk/gitalk)
 * [Valine](https://valine.js.org/)
+* [cookieconsent](https://github.com/osano/cookieconsent)
 
 ## Author
 
 [Dillon](https://dillonzq.com)
+
+## Sponsor
+
+If you enjoy the theme, please consider buying me a coffee ☕️.
+
+* [PayPal](https://paypal.me/dillonzq)
+* [Alipay](https://github.com/dillonzq/LoveIt/raw/master/images/Alipay.jpg)
+* [Wechat](https://github.com/dillonzq/LoveIt/raw/master/images/Wechat.jpg)
+
+Thanks! ❤️

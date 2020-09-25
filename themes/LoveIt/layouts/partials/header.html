@@ -5,13 +5,13 @@
             <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
                 {{- with .Site.Params.header.title -}}
                     {{- with .logo -}}
-                        {{- dict "src" . "alt" $.Site.Title "class" "logo" | partial "plugin/image.html" -}}
+                        {{- dict "Src" . "Class" "logo" | partial "plugin/image.html" -}}
                     {{- end -}}
                     {{- with .pre -}}
                         <span class="header-title-pre">{{ . | safeHTML }}</span>
                     {{- end -}}
                     {{- if .typeit -}}
-                        {{- $id := dict "content" .name "scratch" $.Scratch | partial "function/id.html" -}}
+                        {{- $id := dict "Content" .name "Scratch" $.Scratch | partial "function/id.html" -}}
                         <span id="{{ $id }}" class="typeit"></span>
                         {{- dict $id (slice $id) | dict "typeitMap" | merge ($.Scratch.Get "this") | $.Scratch.Set "this" -}}
                     {{- else -}}
@@ -44,16 +44,19 @@
                         {{- .Language.LanguageName -}}
                         <i class="fas fa-chevron-right fa-fw"></i>
                         <select class="language-select" id="language-select-desktop" onchange="location = this.value;">
-                            {{- range .Page.AllTranslations -}}
-                                {{- $translation := . -}}
-                                {{- range $.Site.Languages -}}
-                                    {{- if eq $translation.Lang .Lang -}}
-                                        {{- if eq $.Page.Lang .Lang -}}
-                                            <option value="{{ $translation.RelPermalink }}" selected>{{ .LanguageName }}</option>
-                                        {{- else -}}
-                                            <option value="{{ $translation.RelPermalink }}">{{ .LanguageName }}</option>
-                                        {{- end -}}
-                                    {{- end -}}
+                            {{- if eq .Kind "404" -}}
+                                {{- /* https://github.com/dillonzq/LoveIt/issues/378 */ -}}
+                                {{- range .Sites -}}
+                                    {{- $link := printf "%v/404.html" .LanguagePrefix -}}
+                                    <option value="{{ $link }}"{{ if eq . $.Site }} selected{{ end }}>
+                                        {{- .Language.LanguageName -}}
+                                    </option>
+                                {{- end -}}
+                            {{- else -}}
+                                {{- range .AllTranslations -}}
+                                    <option value="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} selected{{ end }}>
+                                        {{- .Language.LanguageName -}}
+                                    </option>
                                 {{- end -}}
                             {{- end -}}
                         </select>
@@ -89,13 +92,13 @@
                 <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
                     {{- with .Site.Params.header.title -}}
                         {{- with .logo -}}
-                            {{- dict "src" . "alt" $.Site.Title "class" "logo" | partial "plugin/image.html" -}}
+                            {{- dict "Src" . "Class" "logo" | partial "plugin/image.html" -}}
                         {{- end -}}
                         {{- with .pre -}}
                             <span class="header-title-pre">{{ . | safeHTML }}</span>
                         {{- end -}}
                         {{- if .typeit -}}
-                            {{- $id := dict "content" .name "scratch" $.Scratch | partial "function/id.html" -}}
+                            {{- $id := dict "Content" .name "Scratch" $.Scratch | partial "function/id.html" -}}
                             <span id="{{ $id }}" class="typeit"></span>
                             {{- dict $id (slice $id) | dict "typeitMap" | merge ($.Scratch.Get "this") | $.Scratch.Set "this" -}}
                         {{- else -}}
@@ -151,16 +154,19 @@
                     {{- .Language.LanguageName -}}
                     <i class="fas fa-chevron-right fa-fw"></i>
                     <select class="language-select" onchange="location = this.value;">
-                        {{- range .Page.AllTranslations -}}
-                            {{- $translation := . -}}
-                            {{- range $.Site.Languages -}}
-                                {{- if eq $translation.Lang .Lang -}}
-                                    {{- if eq $.Page.Lang .Lang -}}
-                                        <option value="{{ $translation.RelPermalink }}" selected>{{ .LanguageName }}</option>
-                                    {{- else -}}
-                                        <option value="{{ $translation.RelPermalink }}">{{ .LanguageName }}</option>
-                                    {{- end -}}
-                                {{- end -}}
+                        {{- if eq .Kind "404" -}}
+                            {{- /* https://github.com/dillonzq/LoveIt/issues/378 */ -}}
+                            {{- range .Sites -}}
+                                {{- $link := printf "%v/404.html" .LanguagePrefix -}}
+                                <option value="{{ $link }}"{{ if eq . $.Site }} selected{{ end }}>
+                                    {{- .Language.LanguageName -}}
+                                </option>
+                            {{- end -}}
+                        {{- else -}}
+                            {{- range .AllTranslations -}}
+                                <option value="{{ .RelPermalink }}"{{ if eq .Lang $.Lang }} selected{{ end }}>
+                                    {{- .Language.LanguageName -}}
+                                </option>
                             {{- end -}}
                         {{- end -}}
                     </select>

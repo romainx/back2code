@@ -105,8 +105,10 @@
 * 支持 **Bilibili 视频** shortcode
 * 支持多种**注释**的 shortcode
 * 支持**自定义样式**的 shortcode
+* 支持**自定义脚本**的 shortcode
 * 支持基于 [TypeIt](https://typeitjs.com/) 的**打字动画** shortcode
 * 支持基于 [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll) 的**滚动动画**
+* 支持基于 [cookieconsent](https://github.com/osano/cookieconsent) 的 **Cookie 许可横幅**
 * ...
 
 ## [文档](https://hugoloveit.com/zh-cn/categories/documentation/)
@@ -130,6 +132,9 @@ LoveIt 支持下列语言:
 * 西班牙语
 * 德语
 * 塞尔维亚语
+* 俄语
+* 罗马尼亚语
+* 越南语
 * [贡献一种新的语言](https://github.com/dillonzq/LoveIt/pulls)
 
 [语言兼容性](https://hugoloveit.com/zh-cn/theme-documentation-basics/#language-compatibility)
@@ -169,7 +174,18 @@ LoveIt 主题中用到了以下项目，感谢它们的作者：
 * [MetingJS](https://github.com/metowolf/MetingJS)
 * [Gitalk](https://github.com/gitalk/gitalk)
 * [Valine](https://valine.js.org/)
+* [cookieconsent](https://github.com/osano/cookieconsent)
 
 ## 作者
 
 [Dillon](https://dillonzq.com)
+
+## 赞助支持
+
+如果你喜爱这个主题, 请考虑给我买杯咖啡 ☕️.
+
+* [PayPal](https://paypal.me/dillonzq)
+* [支付宝](https://github.com/dillonzq/LoveIt/raw/master/images/Alipay.jpg)
+* [微信支付](https://github.com/dillonzq/LoveIt/raw/master/images/Wechat.jpg)
+
+谢谢! ❤️
