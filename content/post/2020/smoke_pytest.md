@@ -35,6 +35,7 @@ cases = [
 @pytest.mark.parametrize("name,command", cases, ids=[case[0] for case in cases])
 def test_command(host, name, command):
     out = host.check_output(command)
+    # Can use out to print the result of the command or to make something more clever
     logger.info(f"{name} [ OK ]")
 ```
 
