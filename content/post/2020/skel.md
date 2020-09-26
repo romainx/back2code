@@ -1,7 +1,6 @@
 ---
 title: 'Skeletal profiles'
 date: '2020-09-26'
-draft: true
 categories: ['ops']
 tags: ['linux']
 ---
