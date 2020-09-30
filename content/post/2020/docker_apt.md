@@ -34,10 +34,14 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 ```
 
+And maybe the most important for the image size, **everything shall be in the same layer i.e. in the same command**. 
+It is necessary to avoid storing layers with many files created and then deleted. Doing that has a huge negative impact on image size.
+Another option is to use the `--squash` option, see my article [Squashing Docker Images][lk1].
+
 ## Linter
 
 These best practices can be enforced by the use of a `linter`.
-[Hadolint][hadolint] is a good choice for that, I appreciate the clarity of the rules that are well documented and the simplicity of the tool.
+[Hadolint][lk2] is a good choice for that, I appreciate the clarity of the rules that are well documented and the simplicity of the tool.
 
 It checks several rules related to APT.
 
@@ -63,4 +67,5 @@ $ hadolint Dockerfile
 - [Clean, autoclean, and autoremove — combining them is a good step?](https://askubuntu.com/questions/984797/clean-autoclean-and-autoremove-combining-them-is-a-good-step)
 - [Clear `apt-get list`](https://unix.stackexchange.com/questions/217369/clear-apt-get-list)
 
-[hadolint]: https://github.com/hadolint/hadolint
+[lk1]: {{< ref "docker_squash.md" >}}
+[lk2]: https://github.com/hadolint/hadolint
