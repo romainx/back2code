@@ -34,7 +34,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 ```
 
-And maybe the most important for the image size, **everything shall be in the same layer i.e. in the same command**. 
+And maybe the most important regarding the image size, **everything shall be in the same layer i.e. in the same command**. 
 It is necessary to avoid storing layers with many files created and then deleted. Doing that has a huge negative impact on image size.
 Another option is to use the `--squash` option, see my article [Squashing Docker Images][lk1].
 
