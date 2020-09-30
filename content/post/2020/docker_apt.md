@@ -2,7 +2,7 @@
 title: 'APT usage in Docker images'
 date: '2020-09-29'
 categories: ['ops']
-tags: ['docker']
+tags: ['docker', 'linux']
 ---
 
 When packages are installed in a `Dockerfile` through **APT** (Debian, Ubuntu) you should comply with some **best practices**.
