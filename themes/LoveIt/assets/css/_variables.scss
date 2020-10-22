@@ -18,16 +18,16 @@ $global-font-color: #161209 !default;
 $global-font-color-dark: #a9a9b3 !default;
 
 // Color of the secondary text
-$global-font-secondary-color: #a9a9b3 !default;
-$global-font-secondary-color-dark: #5d5d5f !default;
+$global-font-secondary-color: #5d5d5f !default;
+$global-font-secondary-color-dark: #a9a9b3 !default;
 
 // Color of the link
 $global-link-color: #161209 !default;
 $global-link-color-dark: #a9a9b3 !default;
 
 // Color of the hover link
-$global-link-hover-color: #2d96bd !default;
-$global-link-hover-color-dark: #fff !default;
+$global-link-hover-color: #16A085 !default;
+$global-link-hover-color-dark: #87D37C !default;
 
 // Color of the border
 $global-border-color: #f0f0f0 !default;
@@ -75,12 +75,12 @@ $toc-title-font-size: 1.2rem !default;
 $toc-content-font-size: 1rem !default;
 
 // Color of the single link
-$single-link-color: #2d96bd !default;
-$single-link-color-dark: #55bde2 !default;
+$single-link-color: #26A65B !default;
+$single-link-color-dark: #26A65B !default;
 
 // Color of the hover single link
-$single-link-hover-color: #ef3982 !default;
-$single-link-hover-color-dark: #bdebfc !default;
+$single-link-hover-color: #36D7B7 !default;
+$single-link-hover-color-dark: #87D37C !default;
 
 // Color of the table background
 $table-background-color: #fff !default;
@@ -91,14 +91,14 @@ $table-thead-color: #ededed !default;
 $table-thead-color-dark: #20252b !default;
 
 // Color of the blockquote
-$blockquote-color: #6bd6fd !default;
-$blockquote-color-dark: #59c5ec !default;
+$blockquote-color: #049372 !default;
+$blockquote-color-dark: #26C281 !default;
 // ========== Single Content ========== //
 
 // ========== Pagination ========== //
 // Color of the link in pagination
-$pagination-link-color: #2d96bd !default;
-$pagination-link-color-dark: #a9a9b3 !default;
+$pagination-link-color: #26C281 !default;
+$pagination-link-color-dark: #26C281 !default;
 
 // Color of the hover link in pagination
 $pagination-link-hover-color: #000 !default;
@@ -107,7 +107,7 @@ $pagination-link-hover-color-dark: #fff !default;
 
 // ========== Code ========== //
 // Color of the code
-$code-color: #E74C3C !default;
+$code-color: #F62459 !default;
 $code-color-dark: #E5BF78 !default;
 
 // Color of the code background

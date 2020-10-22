@@ -216,7 +216,7 @@ theme = "LoveIt"
     #  whether to enable the fontawesome extended syntax
     fontawesome = true
     # whether to show link to Raw Markdown content of the content
-    linkToMarkdown = true
+    linkToMarkdown = false
     #  whether to show the full text content in RSS
     rssFullText = false
     #  Table of the contents config
@@ -480,8 +480,8 @@ theme = "LoveIt"
   [markup.highlight]
     codeFences = true
     guessSyntax = true
-    lineNos = true
-    lineNumbersInTable = true
+    lineNos = false
+    lineNumbersInTable = false
     # false is a necessary configuration
     # (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
