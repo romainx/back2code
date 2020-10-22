@@ -74,9 +74,9 @@ $ docker run --rm startup bash -lc 'echo "PROFILE -> $TEST_PROFILE, BASHRC -> $T
 
 ## Non-login shell
 
-> When an interactive shell that is not a login shell is started, `bash` reads and executes commands from `~/.bashrc`, if that file exists. This may be inhibited by using the `--norc` option. The `--rcfile` file option will force `bash` to read and execute commands from file instead of `~/.bashrc`.
+> When an interactive shell that is not a login shell is started, `bash` reads and executes commands from `~/.bashrc`, if that file exists. This may be inhibited by using the `--norc` option. The `--rcfile` file option will force `bash` to read and execute commands from file instead of `~/.bashrc`.[^1]
 
-> When bash is started non-interactively, to run a shell script, for example, it looks for the variable `BASH_ENV` in the environment, expands its value if it appears there, and uses the expanded value as the name of a file to read and execute.
+> When bash is started non-interactively, to run a shell script, for example, it looks for the variable `BASH_ENV` in the environment, expands its value if it appears there, and uses the expanded value as the name of a file to read and execute.[^1]
 
 ### Interactive
 
