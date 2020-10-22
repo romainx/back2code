@@ -1,18 +1,18 @@
 ---
-title: 'Linux startup files'
+title: 'Linux startup scripts'
 date: '2020-10-22'
 categories: ['ops']
 tags: ['docker', 'linux']
 ---
 
-When it comes to perform customization to startup files in order to initialize or tune something, it's not obvious to pick the right startup file. The way the system is reading startup files depends on the context and mainly if the shell is
+When it comes to perform customization to startup scripts in order to initialize or tune something, it's not obvious to pick the right **startup file**. The way the system is reading startup files depends on the context and mainly if the shell is
 
-- interactive / non-interactive shell
-- login / non-login shell
+- **Interactive** / **non-interactive** shell
+- **Login** / **non-login** shell
 
 <!--more-->
 
-## Setting up test
+## Setting up test image
 
 The best way to figure out what happens is to perform a simple test.
 In this test I build a simple docker image exporting different environment variables each storing the current number of milliseconds since epoch.
@@ -21,7 +21,8 @@ In this test I build a simple docker image exporting different environment varia
 - `TEST_BASHRC` is set by `/etc/bash.bashrc`
 
 {{< admonition type=note >}}
-Those files are system-wide files, they can be completed by user's own startup files `~/.profile` and `~/.bashrc`.
+Those files are system-wide files, they can be completed by user's own startup files `~/.profile` and `~/.bashrc`.  
+`/etc/profile` is the main script but fragment of startup files can be put in `/etc/profile.d` to be executed. 
 {{< /admonition >}}
 
 ```Dockerfile
@@ -71,6 +72,17 @@ $ echo "PROFILE -> $TEST_PROFILE, BASHRC -> $TEST_BASHRC"
 ```
 
 We can notice that the `TEST_BASHRC` variable is set first.
+
+## Wrap up
+
+What we've learned
+
+- **Non-interactive**: None
+- **Interactive**
+  - **Non-login** shell: `/etc/bash.bashrc`
+  - **Login shell**: `/etc/bash.bashrc` and `/etc/profile`
+
+See also my previous article on a very close topic [Skeletal profiles (`/etc/skel`)]({{< ref "skel.md" >}}).
 
 ## References / Further reading
 
