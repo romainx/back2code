@@ -21,7 +21,7 @@
         {{- /* Posts */ -}}
         {{- if ne $posts.enable false | and .Site.RegularPages -}}
             {{- /* Paginate */ -}}
-            {{- $pages := where .Site.RegularPages "Type" "post" -}}
+            {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
             {{- if .Site.Params.page.hiddenFromHomePage -}}
                 {{- $pages = where $pages "Params.hiddenfromhomepage" false -}}
             {{- else -}}
