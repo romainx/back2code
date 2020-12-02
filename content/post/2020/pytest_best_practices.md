@@ -26,7 +26,7 @@ In the chapter [Testing][LK2] of the book *[R packages][LK3]* some guidelines ar
 > - A **test** groups together multiple expectations to test the output from a simple function, a range of possibilities for a single parameter from a more complicated function, or tightly related functionality from across multiple functions. This is why they are sometimes called unit as they test one unit of functionality. A test is created with `test_that()`.
 > - A **file** groups together multiple related tests. Files are given a human readable name with `context()`.
 
-So I have thought of a way to use the same kind of guidelines / conventions in Python with `[pytest][LK4]`.
+So I have thought of a way to use the same kind of guidelines / conventions in Python with [`pytest`][LK4].
 
 ## Pytest best practices
 
