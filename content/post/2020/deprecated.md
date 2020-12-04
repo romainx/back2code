@@ -17,7 +17,7 @@ It permits to perform changes and to clean code---because it's always necessary 
 
 In Java there is a built-in annotation for that `@Deprecated`. However in **Python** there is no such a feature.
 
-But as you may no, if something is missing, someone with the same concerns has already built it.
+But as you may know, if something is missing, someone with the same concerns has already built it.
 There is several implementations, I've chosen [Deprecated](https://github.com/tantale/deprecated) since 
 
 - it's very simple and raises a simple **warning**---more on that later---that is printed at runtime. 
