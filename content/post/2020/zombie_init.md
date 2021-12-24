@@ -128,7 +128,7 @@ It is included in some base images and can also be installed through `conda`.
 
 ```bash
 $ conda install -c conda-forge tini
-````
+```
 
 ## References / Further reading
 
