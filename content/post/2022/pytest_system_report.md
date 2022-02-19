@@ -34,7 +34,7 @@ I find this solution sometimes overkill and not so convenient to obtain a clear 
 
 I like table outputs in CLI, I think they are very clear. 
 To obtain this kind of output in Python I often use [`tabulate`][LK6]--the use of `tabulate` to pretty print Python DataFrame is by far [my highest scored answer on Stack Overflow][LK8].
-It's a convenient way to output tables in various formats from several Python data structures.
+It is a convenient way to output tables in different formats from various Python data structures.
 
 ```Python
 from typing import List
@@ -62,7 +62,7 @@ def test_summary(host, cases):
 Then it should be run by 
 
 - disabling [`pytest` capture][LK7] thanks to the `-s` flag
-- reducing `pytest` verbosity thanks to the `q` flag.
+- reducing `pytest` verbosity thanks to the `-q` flag
 
 ```bash
 pytest -s -q system_report.py
