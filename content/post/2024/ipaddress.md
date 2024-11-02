@@ -6,6 +6,7 @@ tags: ['python']
 ---
 
 If you are not a network engineer having to deal with IP adresses and  IP networks (like me), you might be interested by this post.
+<!--more-->
 I recently discovered a very convenient Python module called [`ipaddress`](https://docs.python.org/3/library/ipaddress.html). It's a no-brainer for common questions.
 
 * Is an IP address part of a network?
